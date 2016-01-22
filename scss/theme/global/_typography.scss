@@ -9,3 +9,29 @@
     color: inherit;
   }
 }
+
+
+.header-1 {
+  @extend %header;
+  font-size: rem-calc(33);
+  line-height: 1.39;
+  text-transform: uppercase;
+}
+
+.header-2 {
+  @extend %header;
+  font-size: rem-calc(29);
+  text-transform: uppercase;
+  // line-height: 1.58;
+}
+
+.header-3 {
+  @extend %header;
+  font-weight: $book;
+  font-size: rem-calc(21);
+}
+.header-4 {
+  @extend %header;
+  font-size: rem-calc(19);
+  text-transform: uppercase;
+}

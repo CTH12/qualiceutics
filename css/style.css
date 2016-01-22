@@ -948,9 +948,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "ingra", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: #606264;
   background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1741,7 +1741,7 @@ i {
 
 strong,
 b {
-  font-weight: bold;
+  font-weight: 700;
   line-height: inherit; }
 
 small {
@@ -1755,7 +1755,7 @@ h4,
 h5,
 h6 {
   font-family: "ingra", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
@@ -1848,7 +1848,7 @@ dl {
   margin-bottom: 1rem; }
   dl dt {
     margin-bottom: 0.3rem;
-    font-weight: bold; }
+    font-weight: 700; }
 
 blockquote {
   margin: 0 0 1rem;
@@ -1866,13 +1866,13 @@ cite {
     content: '\2014 \0020'; }
 
 abbr {
-  color: #0a0a0a;
+  color: #606264;
   cursor: help;
   border-bottom: 1px dotted #0a0a0a; }
 
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
+  font-weight: 500;
   color: #0a0a0a;
   background-color: #e6e6e6;
   border: 1px solid #cacaca;
@@ -1888,7 +1888,7 @@ kbd {
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.4;
   color: #8a8a8a; }
 
@@ -2187,7 +2187,7 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.8;
   color: #0a0a0a; }
   label.middle {
@@ -2300,7 +2300,7 @@ select {
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #ec5840; }
   .form-error.is-visible {
     display: block; }
@@ -2588,7 +2588,7 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
-  color: #0a0a0a;
+  color: #606264;
   background-color: white; }
   .callout > :first-child {
     margin-top: 0; }
@@ -3470,12 +3470,12 @@ table {
     border: 1px solid #f1f1f1;
     background-color: #fefefe; }
   caption {
-    font-weight: bold;
+    font-weight: 700;
     padding: 0.5rem 0.625rem 0.625rem; }
   thead,
   tfoot {
     background: #f8f8f8;
-    color: #0a0a0a; }
+    color: #606264; }
     thead tr,
     tfoot tr {
       background: transparent; }
@@ -3484,7 +3484,7 @@ table {
     tfoot th,
     tfoot td {
       padding: 0.5rem 0.625rem 0.625rem;
-      font-weight: bold;
+      font-weight: 700;
       text-align: left; }
   tbody tr:nth-child(even) {
     background-color: #f1f1f1; }
@@ -4766,6 +4766,32 @@ html {
   text-shadow: none; }
 
 /* Default header styles from Foundation 5 */
+.header-1, .header-2, .header-3, .header-4 {
+  display: block;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility; }
+  .header-1 small, .header-2 small, .header-3 small, .header-4 small {
+    color: inherit; }
+
+.header-1 {
+  font-size: 2.0625rem;
+  line-height: 1.39;
+  text-transform: uppercase; }
+
+.header-2 {
+  font-size: 1.8125rem;
+  text-transform: uppercase; }
+
+.header-3 {
+  font-weight: 500;
+  font-size: 1.3125rem; }
+
+.header-4 {
+  font-size: 1.1875rem;
+  text-transform: uppercase; }
+
 @font-face {
   font-family: "qua-icons";
   src: url("../fonts/qua-icons.eot");
