@@ -21,24 +21,28 @@ $jet         : #222222;
 $black       : #000000;
 
 // be sure to add the vars to the $theme_colors
-$red:         #e61938;
-$blue:        #2390dc;
-$green:       #b2c936;
+$orange       : #f7a115;
+$orange-dark  : #d68500;
+$blue         : #2d6caa;
+$grey         : #606264;
+$grey-dark    : #4b4c4e;
+$grey-light   : #e9e9e9;
+
 
 $theme_colors: (
-  "red":         $red,
-  "blue":        $blue,
-  "green":       $green,
+  "orange":       $orange,
+  "orange-dark":  $orange-dark,
+  "blue":         $blue,
+  "grey":         $grey,
+  "grey-dark":    $grey-dark,
+  "grey-light":   $grey-light,
 );
 
 
 
 // type + weights
-// $font: 'Source Sans Pro';  // add to appropriate font stack and uncomment
-// $font-family-sans-serif: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$ingra: 'ingra';  // add to appropriate font stack and uncomment
+$ingra-stack: $ingra, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
-// $light: 300;
-// $regular: 400;
-// $semi-bold: 600;
-// $bold: 700;
+$book: 500;  // "medium"
+$semi-bold: 700;  // "bold"
