@@ -16,3 +16,181 @@
 
 // page types
 // @import "pages/homepage";
+
+.global-header {
+  @include page-section(rem-calc(20));
+  border-bottom: rem-calc(6) solid $orange;
+  text-align: center;
+  background-image: url(../images/left-hexagons.png);
+  background-repeat: no-repeat;
+  @include mq(medium) {
+    @include page-section(rem-calc(38));
+    background-image: url(../images/left-hexagons.png),
+                      url(../images/right-hexagons.png);
+    background-position: bottom left,
+                         bottom right;
+
+  }
+}
+
+.h1 {
+  margin: 0;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.hr-1 {
+  border-bottom-width: rem-calc(7);
+  border-bottom-color: $grey-light;
+  width: 50%;
+  margin-left: 0;
+}
+
+.hero {
+  .callout {
+    background-color: rgba($white, 0.9);
+  }
+}
+
+.callout-1 {
+  // @include page-section(rem-calc(30));
+  padding: rem-calc(30 15);
+  background-color: $orange;
+  font-weight: $semi-bold;
+  font-size: rem-calc(21);
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border-bottom: rem-calc(8) solid $white;
+  background-image: url(../images/left-hexagons.png),
+                    url(../images/right-hexagons.png);
+  background-position: center left,
+                       center right;
+  background-repeat: no-repeat;
+  // margin-right: rem-calc(10);
+  // margin-left: rem-calc(10);
+  max-width: rem-calc(800);
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  &:before,
+  &:after {
+    content: "\0a0";
+    display: inline-block;
+    position: absolute;
+    width: rem-calc(8);
+    height: 100%;
+    top: rem-calc(8);
+    background-color: $white;
+  }
+  &:before {
+    left: rem-calc(-8);
+  }
+  &:after {
+    right: rem-calc(-8);
+  }
+
+  @include mq(medium) {
+    padding-left: rem-calc(45);
+    padding-right: rem-calc(45);
+  }
+
+  @include mq(large) {
+    padding-left: rem-calc(80);
+    padding-right: rem-calc(80);
+  }
+}
+
+.global-footer {
+  @include page-section(rem-calc(40));
+  background-color: $grey-dark;
+  text-align: center;
+  color: $grey-light;
+  text-transform: uppercase;
+  font-size: rem-calc(18);
+  p {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  a {
+    &:before {
+      content: "\0a0";
+      display: inline-block;
+      width: 1px;
+      height: rem-calc(32);
+      opacity: 0.3;
+      background-color: $grey-light;
+      margin-right: rem-calc(20);
+      vertical-align: middle;
+    }
+    color: inherit;
+    margin-left: rem-calc(20);
+  }
+  i {
+    font-size: rem-calc(20);
+    position: relative;
+    bottom: rem-calc(-3);
+  }
+
+  @include mq(medium) {
+    @include page-section(rem-calc(84));
+  }
+}
+
+.content {
+  position: relative;
+  @include mq(medium) {
+    @include page-section(rem-calc(40));
+  }
+  @include mq(large) {
+    @include page-section(rem-calc(80));
+  }
+}
+
+
+.form-container {
+  @include page-section(rem-calc(40));
+  background-color: $grey-light;
+  .hr-1 {
+    border-bottom-color: $grey;
+    opacity: 0.3;
+  }
+
+  @include mq(medium) {
+    @include page-section(rem-calc(80));
+  }
+  @include mq(large) {
+    padding-top: rem-calc(140);
+    // @include page-section(rem-calc(140));
+  }
+}
+
+
+.callout-container {
+  @include mq(medium) {
+    position: absolute;
+    bottom: rem-calc(-40);
+    width: 100%;
+  }
+
+  @include mq(medium) {
+    bottom: rem-calc(-60);
+  }
+}
+
+.contact-list {
+  font-size: rem-calc(18);
+  i {
+    margin-right: rem-calc(8);
+  }
+}
+
+
+.contact-form {
+  textarea {
+    height: rem-calc(140);
+  }
+}
