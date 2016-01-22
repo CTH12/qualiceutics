@@ -1,1 +1,30 @@
 //- unique site components go here
+form#contact(name='contact', method='post')
+  fieldset
+    //- label#name(for='name')
+      | Name
+      span.required *
+    input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
+    label#email(for='email')
+      | Email
+      span.required *
+    input#email(type='text', name='email', size='30', value='', required='')
+    label#phone(for='phone') Phone
+    input#phone(type='text', name='phone', size='30', value='')
+    label#message(for='Message')
+      | Message
+      span.required *
+    textarea#message(name='message', required='')
+    label#captcha(for='Captcha')
+      | Name the small house pet that says "
+      i meow
+      | "
+      span.required *
+    input(type='text', name='captcha', value='', required='')
+    input#submit(type='submit', name='submit', value='Send')
+#success
+  span
+    p Your message was sent succssfully! I will be in touch as soon as I can.
+#error
+  span
+    p Something went wrong, try refreshing and submitting the form again.
