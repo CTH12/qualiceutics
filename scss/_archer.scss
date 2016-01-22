@@ -12,11 +12,14 @@ ul.glyphs {
   li {
     text-align: center;
     @include grid-column(6);
+    @include grid-column-end;
     @include breakpoint(medium) {
       @include grid-column(4);
+      @include grid-column-end;
     }
     @include breakpoint(large) {
       @include grid-column(2);
+      @include grid-column-end;
     }
   }
   .icon {

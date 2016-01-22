@@ -3771,6 +3771,8 @@ ul.glyphs {
         padding-right: 0.9375rem; } }
     ul.glyphs li:last-child:not(:first-child) {
       float: right; }
+    ul.glyphs li:last-child:last-child {
+      float: left; }
     @media screen and (min-width: 40em) {
       ul.glyphs li {
         padding-left: 0.625rem;
@@ -3783,7 +3785,9 @@ ul.glyphs {
       padding-right: 0.9375rem; } }
     @media screen and (min-width: 40em) {
         ul.glyphs li:last-child:not(:first-child) {
-          float: right; } }
+          float: right; }
+        ul.glyphs li:last-child:last-child {
+          float: left; } }
     @media screen and (min-width: 64em) {
       ul.glyphs li {
         padding-left: 0.625rem;
@@ -3796,7 +3800,9 @@ ul.glyphs {
       padding-right: 0.9375rem; } }
     @media screen and (min-width: 64em) {
         ul.glyphs li:last-child:not(:first-child) {
-          float: right; } }
+          float: right; }
+        ul.glyphs li:last-child:last-child {
+          float: left; } }
   ul.glyphs .icon {
     font-size: 2rem; }
 
@@ -4760,5 +4766,45 @@ html {
   text-shadow: none; }
 
 /* Default header styles from Foundation 5 */
+@font-face {
+  font-family: "qua-icons";
+  src: url("../fonts/qua-icons.eot");
+  src: url("../fonts/qua-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/qua-icons.woff") format("woff"), url("../fonts/qua-icons.ttf") format("truetype"), url("../fonts/qua-icons.svg#qua-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "qua-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "qua-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-email:before {
+  content: "\61"; }
+
+.icon-linkedin:before {
+  content: "\62"; }
+
+.icon-phone:before {
+  content: "\63"; }
+
 /* Default button styles from Foundation 5 */
 /*# sourceMappingURL=style.css.map */
