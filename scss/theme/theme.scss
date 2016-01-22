@@ -1,0 +1,17 @@
+// color classes
+// $theme_colors is set in _vars. create-color-classes is defined in _mixins
+@include create-color-classes($theme_colors);
+
+// global elements
+@import "global/base";
+// @import "global/header";
+// @import "global/footer";
+@import "global/typography";
+
+// components
+@import "components/icons";
+@import "components/links";
+@import "components/buttons";
+
+// page types
+// @import "pages/homepage";

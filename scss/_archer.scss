@@ -1,0 +1,99 @@
+// archercom specific classes.
+// these classes can be used in production but are mostly for internal use
+// ============================================================
+
+[data-clipboard] {
+  cursor: pointer;
+}
+
+ul.glyphs {
+  @include grid-row;
+  list-style: none;
+  li {
+    text-align: center;
+    @include grid-column(6);
+    @include breakpoint(medium) {
+      @include grid-column(4);
+    }
+    @include breakpoint(large) {
+      @include grid-column(2);
+    }
+  }
+  .icon {
+    font-size: rem-calc(32);
+  }
+}
+
+
+.kitchen-sink-nav {
+  @include mq(medium) {
+    position: fixed;
+    backface-visibility: hidden;
+  }
+}
+
+
+
+
+// colors
+// yellow --> needs immediate attention (lorem ipsum)
+// blue --> needs review (confirmation)
+// red --> fix (typo)
+
+.lorem,
+.add-copy,
+.highlight {
+  background-color: yellow;
+}
+
+.to-fix,
+.to-review,
+.needs-to-be-editted {
+  border-bottom: 1px solid tomato;
+}
+
+.add-link,
+.link-needs-href,
+.fix-link {
+  position: relative;
+  &:after {
+    // original version:
+    // Forked from [Charbs](http://codepen.io/cayoub88/)'s Pen
+    // [Signal Animation](http://codepen.io/cayoub88/pen/DCemr/)
+    content: "\0a0";
+    border:3px solid yellow;
+    border-radius:30px;
+    height:30px;
+    left:50%;
+    margin:-15px 0 0 -15px;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    width:30px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count:infinite;
+  }
+}
+
+.review-link {
+  @extend .add-link;
+  &:after {
+    border-color: blue;
+  }
+}
+
+
+
+@keyframes pulsate {
+  0% {
+    transform: scale(.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

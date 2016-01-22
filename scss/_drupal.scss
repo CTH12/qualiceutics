@@ -1,0 +1,17 @@
+.drupal-edit-buttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  z-index: 100;
+  backface-visibility: hidden;
+  a {
+    margin-bottom: 0;
+  }
+}
+
+.drupal-messages {
+  .alert-box {
+    margin-bottom: 0;
+  }
+}

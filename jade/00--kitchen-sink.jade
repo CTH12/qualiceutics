@@ -1,0 +1,83 @@
+doctype html
+html(lang="en").no-js
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Qualiceutics - Kitchen Sink
+    meta(name="description", content="Qualiceutics")
+    include inc/_head.jade
+
+  body
+    a(href="#main").show-on-focus Skip to main content
+    .container
+      header.header
+        .row
+          .columns
+            h1 Qualiceutics - Kitchen Sink
+
+      main#main
+        .clearfix
+          //- navigation
+          .columns.medium-2.kitchen-sink-nav
+            ul.no-bullet
+              li
+                a(href="#colors", data-smooth-scroll) Colors
+              li
+                a(href="#icons", data-smooth-scroll) Icons
+              li
+                a(href="#typography", data-smooth-scroll) Typography
+              li
+                a(href="#links", data-smooth-scroll) Links
+              li
+                a(href="#buttons", data-smooth-scroll) Buttons
+              li
+                a(href="#misc", data-smooth-scroll) Misc
+
+
+          //- main area
+          .columns.medium-10
+            section#colors.thick-page-section
+              h2 Colors
+              hr
+              p For every color there are font and background classes. <br> Ex: red - .red, .red-bg
+              include kitchen-sink/_colors.jade
+
+
+            section.thick-page-section
+              h2#icons Icons
+              hr
+              include kitchen-sink/_icons.jade
+
+
+            section.thick-page-section
+              h2#typography Typography
+              p All header colors are added via a color class. <br> Margins shown here are made with the margin-bottom classes
+              hr
+              include kitchen-sink/_typography.jade
+
+
+            section.thick-page-section
+              h2#links Links
+              hr
+              include kitchen-sink/_links.jade
+
+
+            section.thick-page-section
+              h2#buttons Buttons
+              hr
+              include kitchen-sink/_buttons.jade
+
+
+            section.thick-page-section
+              h2#misc Misc
+              hr
+              include kitchen-sink/_misc.jade
+
+
+
+      footer.footer
+        .row
+          .columns
+            p &phi; Qualiceutics - Kitchen Sink
+
+    include inc/_scripts.jade

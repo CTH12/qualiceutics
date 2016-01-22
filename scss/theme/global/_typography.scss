@@ -1,0 +1,11 @@
+/* Default header styles from Foundation 5 */
+%header {
+  display: block;
+  font-weight: $header-font-weight;
+  margin-top: 0;
+  margin-bottom: $header-margin-bottom;
+  text-rendering: $header-text-rendering;
+  small {
+    color: inherit;
+  }
+}

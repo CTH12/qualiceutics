@@ -1,0 +1,24 @@
+{
+  "name": "qualiceutics",
+  "description": "Custom sub-theme based on the the Zurb Foundation base theme.",
+  "authors": [
+    "luis rosario [zapo]"
+  ],
+  "homepage": "http://archercom.com",
+  "version": "0.1.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.1.1",
+    "howler.js": "howler#~1.1.27",
+    "konami-js": "*",
+    "clipboard": "~1.5.5",
+    "motion-ui": "~1.1.1"
+  }
+}
