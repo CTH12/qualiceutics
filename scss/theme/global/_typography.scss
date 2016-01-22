@@ -16,13 +16,14 @@
   font-size: rem-calc(33);
   line-height: 1.39;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header-2 {
   @extend %header;
   font-size: rem-calc(29);
   text-transform: uppercase;
-  // line-height: 1.58;
+  letter-spacing: 1px;
 }
 
 .header-3 {
