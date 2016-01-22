@@ -71,22 +71,24 @@ html(lang="en").no-js
                       i.icon.icon-email
                       span josler@qualiceutics.com
                 .columns.medium-8.large-7
-                  form#contact.contact-form(name='contact', method='post')
+                  //- OG form
+                  form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
+                    .alert.callout(data-abide-error, style='display: none;')
+                      span Please be sure to fill out all required fields
                     input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
                     .row
                       .columns.medium-6
                         input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
                       .columns.medium-6
-                        input#phone(type='text', name='phone', size='30', value='', placeholder="Phone")
+                        input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
                     textarea#message(name='message', required, placeholder="Compose Message")
                     input#submit(type='submit', name='submit', value='Send').button-1.alt
-                  #success
+                  //- #success
                     span
                       p Your message was sent succssfully! I will be in touch as soon as I can.
-                  #error
+                  //- #error
                     span
                       p Something went wrong, try refreshing and submitting the form again.
-
 
 
       footer.global-footer

@@ -56,7 +56,6 @@
 }
 
 .callout-1 {
-  // @include page-section(rem-calc(30));
   padding: rem-calc(30 15);
   background-color: $orange;
   font-weight: $semi-bold;
@@ -70,8 +69,6 @@
   background-position: center left,
                        center right;
   background-repeat: no-repeat;
-  // margin-right: rem-calc(10);
-  // margin-left: rem-calc(10);
   max-width: rem-calc(800);
   margin: 0 auto;
   position: relative;
@@ -164,7 +161,6 @@
   }
   @include mq(large) {
     padding-top: rem-calc(140);
-    // @include page-section(rem-calc(140));
   }
 }
 
