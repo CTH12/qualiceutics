@@ -1,9 +1,3 @@
-/*!
- * qualiceutics v0.1.0 (http://archercom.com/)
- * Copyright 2014-2016 Archer Communications [luis rosario //zapo]
- * Licensed under MIT (https://github.com/archercom/arrowhead/blob/master/LICENSE)
- */
-
 (function ($, window, document, undefined) {
 
   'use strict';
@@ -140,6 +134,26 @@
       // konami /* play sound effect */
       var easter_egg = new Konami(this.utils.konami);
 
+
+      // contact form setup
+      // ----------------------------------------
+      var $contactForm = $('#contact');
+      $contactForm.on('submit', function (event) {
+        event.preventDefault();
+        // the actual submission
+        $.ajax({
+          url: 'process.php',
+          type: 'post',
+          data: $contactForm.serialize(),
+          success: function () {
+            $contactForm.find('input[type=text], textarea').val('');
+            alert('Thank you! We\'ll get in touch soon');
+          },
+          error: function () {
+            alert('Sorry, looks like something went wrong');
+          }
+        });
+      });
     }
 
   };

@@ -134,6 +134,26 @@
       // konami /* play sound effect */
       var easter_egg = new Konami(this.utils.konami);
 
+
+      // contact form setup
+      // ----------------------------------------
+      var $contactForm = $('#contact');
+      $contactForm.on('submit', function (event) {
+        event.preventDefault();
+        // the actual submission
+        $.ajax({
+          url: 'process.php',
+          type: 'post',
+          data: $contactForm.serialize(),
+          success: function () {
+            $contactForm.find('input[type=text], textarea').val('');
+            alert('Thank you! We\'ll get in touch soon');
+          },
+          error: function () {
+            alert('Sorry, looks like something went wrong');
+          }
+        });
+      });
     }
 
   };
