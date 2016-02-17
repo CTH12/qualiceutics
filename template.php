@@ -35,10 +35,10 @@ function qualiceutics_theme() {
 
   $items['user_login'] = array(
     'render element' => 'form',
-    'path' => drupal_get_path('theme', 'arrow') . '/templates',
+    'path' => drupal_get_path('theme', 'qualiceutics') . '/templates',
       'template' => 'user-login',
       'preprocess functions' => array(
-        'arrow_preprocess_user_login'
+        'qualiceutics_preprocess_user_login'
       ),
   );
 
