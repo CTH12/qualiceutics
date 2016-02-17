@@ -28,3 +28,16 @@
     width: 100%;
   }
 }
+
+.orange-outline {
+    @extend %button;
+    background-color: transparent;
+    border: 1px solid $orange;
+    color: $orange;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $orange-trans;
+        color: $orange;
+    }
+
+}

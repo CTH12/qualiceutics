@@ -1,0 +1,12 @@
+
+// Orbit Slider
+.orbit {
+    ul.orbit-container {
+        outline: none;
+        .orbit-slide {
+            min-height: rem-calc(500);
+            display: flex;
+            align-items: center;
+        }
+    }
+}

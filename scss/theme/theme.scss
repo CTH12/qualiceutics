@@ -4,7 +4,7 @@
 
 // global elements
 @import "global/base";
-// @import "global/header";
+@import "global/header";
 // @import "global/footer";
 @import "global/typography";
 
@@ -13,12 +13,14 @@
 @import "components/forms";
 @import "components/icons";
 @import "components/links";
+@import "components/orbit-slider";
+
 
 // page types
 // @import "pages/homepage";
 
 .global-header {
-  @include page-section(rem-calc(20));
+  @include page-section(rem-calc(15));
   border-bottom: rem-calc(6) solid $orange;
   text-align: center;
   background-image: url(../images/left-hexagons.png);
@@ -45,6 +47,13 @@
 .hr-1 {
   border-bottom-width: rem-calc(7);
   border-bottom-color: $grey-light;
+  width: 50%;
+  margin-left: 0;
+}
+
+.hr-orange {
+  border-bottom-width: rem-calc(7);
+  border-bottom-color: $orange;
   width: 50%;
   margin-left: 0;
 }

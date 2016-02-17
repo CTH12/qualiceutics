@@ -1,0 +1,26 @@
+.top-bar {
+    .row {
+        display: flex;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #responsive-menu {
+        padding-top: rem-calc(20);
+        li {
+            border: 1px solid rgba(96, 98, 100, 0.0);;
+            transition: border 0.25s linear;
+            a {
+                color: $grey;
+                text-transform: uppercase;
+                font-size: rem-calc(15);
+                font-weight: 400;
+            }
+            &:hover {
+                border: 1px solid rgba(96, 98, 100, 0.20);
+            }
+        }
+    }
+}

@@ -10,42 +10,30 @@ html(lang="en").no-js
   body
     a(href="#main").show-for-sr Skip to main content
     .container
-      include inc/_header.jade
+      header.global-header
+        .row
+          .columns
+            h1.h1
+              span.show-for-sr Qualiceutics
+              img(src="images/qualiceutics-logo.png", alt="", width="440", height="140")
 
       main#main
-        .hero
-          .orbit(data-orbit role="region" data-options="autoPlay:false;")
-            ul.orbit-container
-              button.orbit-previous(aria-label='previous')
-                span.show-for-sr Previous Slide
-                | &#9664;
-              button.orbit-next(aria-label='next')
-                span.show-for-sr Next Slide
-                | &#9654;
-              li.is-active.orbit-slide.bg-cover(data-interchange="[images/hp-slide1.jpg, small]")
-                .row
-                  .columns.small-11.small-centered.medium-10.medium-uncenter.medium-offset-2.large-7.large-offset-4
-                    .callout
-                      h1.header-1.orange.thin-margin-bottom Are You <br /> Inspection-Ready?
-                      hr.hr-orange
-                      p.header-3 QualiCeutics links pharma clients to best practice in quality &amp; compliance.
-                      a(href="#").button.orange-outline Learn More &#8594;
-              li.orbit-slide.bg-cover(data-interchange="[images/tubes.jpg, small]")
-                .row
-                  .columns.small-11.small-centered.medium-8.medium-uncenter.medium-offset-4.large-5.large-offset-6
-                    .callout
-                      h2.header-2.orange.thin-margin-bottom Are You Inspection-Ready?
-                      p.header-3 QualiCeutics links pharma clients to best practice in quality &amp; compliance.
-                      hr.hr-1
-                      strong.header-4 Our expertise includes:
-                      ul
-                        li Data Integrity Forensics
-                        li QC Laboratory Remediation
-                        li Computerized System Controls
-                        li Quality System Re-Engineering
-                        li Good Investigation Practices
-                        li Inspection Readiness
-                        li And More...
+        .hero.bg-cover.thick-page-section.medium-xtra-thick-page-section(data-interchange="[images/tubes.jpg, small]")
+          .row
+            .columns.small-11.small-centered.medium-8.medium-uncenter.medium-offset-4.large-5.large-offset-6
+              .callout
+                h2.header-2.orange.thin-margin-bottom Are You Inspection-Ready?
+                p.header-3 QualiCeutics links pharma clients to best practice in quality &amp; compliance.
+                hr.hr-1
+                strong.header-4 Our expertise includes:
+                ul
+                  li Data Integrity Forensics
+                  li QC Laboratory Remediation
+                  li Computerized System Controls
+                  li Quality System Re-Engineering
+                  li Good Investigation Practices
+                  li Inspection Readiness
+                  li And More...
         .content
           .row
             .columns.small-11.small-centered.medium-10
