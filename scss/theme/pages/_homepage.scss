@@ -1,0 +1,60 @@
+// Homepage styles
+
+
+@media #{$large-only} {
+    .hp-block-grid {
+        margin: initial;
+    }
+}
+
+
+.hp-block-grid {
+    margin: rem-calc(20 0);
+}
+
+.callout.transparent-bg {
+    background-color: transparent;
+    padding: rem-calc(20 32 32 0); /* 2rem = (16px * 2) */
+}
+
+.best-practices-cta{
+    list-style-type: none;
+    margin-left: rem-calc(20);
+    li {
+        display: inline-block;
+        padding: rem-calc(0 8);
+        a {
+            color: $grey;
+            transition: all 0.25s ease;
+            &:hover {
+                color: $grey-dark;
+            }
+        }
+    }
+    li.divider {
+        position: relative;
+        &:after {
+            content: ' ';
+            height: 20px;
+            width: 1px;
+            background-color: $grey;
+            position: relative;
+            top: 5px;
+            display: inline-block;
+        }
+    }
+    .icon-linkedin,
+    .icon-email {
+        &:before {
+            position: relative;
+            top: -1px;
+            color: $grey;
+            transition: all 0.25s ease;
+        }
+        &:hover {
+            &:before {
+                color: $grey-dark;
+            }
+        }
+    }
+}

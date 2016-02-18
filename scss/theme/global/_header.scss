@@ -1,14 +1,18 @@
 .top-bar {
     .row {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
     }
-    .brand-logo img {
-        max-width: 90%;
-        margin: 0 auto;
+    .brand-logo {
+        max-width: rem-calc(230);
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: inline-block;
+        }
     }
     #responsive-menu {
-        padding-top: rem-calc(20);
+        padding-top: rem-calc(38);
         li {
             border: 1px solid rgba(96, 98, 100, 0.0);;
             transition: border 0.25s linear;
@@ -23,4 +27,47 @@
             }
         }
     }
+    .menu-wrap {
+        top: 15px;
+        position: relative;
+    }
+}
+
+@media #{$medium-only} {
+    .top-bar {
+        #responsive-menu {
+            padding-top: 20px;
+            .menu > li > a {
+                padding: rem-calc(10);
+            }
+        }
+        .brand-logo {
+            img {
+                max-width: 180px;
+            }
+        }
+    }
+}
+
+
+
+@media #{$small-only} {
+    // .head-wrap {
+    //     height: rem-calc(110);
+    // }
+    .top-bar {
+        #responsive-menu {
+            li {
+                display: block;
+                text-align: left;
+            }
+        }
+        .brand-logo {
+            img {
+                max-width: 160px;
+                float: left;
+            }
+        }
+    }
+
 }

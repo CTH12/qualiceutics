@@ -14,7 +14,7 @@ html(lang="en").no-js
 
       main#main
         .hero
-          .orbit(data-orbit role="region" data-options="autoPlay:false;")
+          .orbit(data-orbit role="region" data-options="autoPlay:false; swipe:true;")
             ul.orbit-container
               button.orbit-previous(aria-label='previous')
                 span.show-for-sr Previous Slide
@@ -24,46 +24,91 @@ html(lang="en").no-js
                 | &#9654;
               li.is-active.orbit-slide.bg-cover(data-interchange="[images/hp-slide1.jpg, small]")
                 .row
-                  .columns.small-11.small-centered.medium-10.medium-uncenter.medium-offset-2.large-7.large-offset-4
+                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
                     .callout
-                      h1.header-1.orange.thin-margin-bottom Are You <br /> Inspection-Ready?
+                      h1.header-1.white.thin-margin-bottom Do you have quality systems in place?
                       hr.hr-orange
-                      p.header-3 QualiCeutics links pharma clients to best practice in quality &amp; compliance.
+                      p.header-3.white Let QualiCeutics improve your quality &amp; compliance culture.
                       a(href="#").button.orange-outline Learn More &#8594;
-              li.orbit-slide.bg-cover(data-interchange="[images/tubes.jpg, small]")
+              li.orbit-slide.bg-cover(data-interchange="[images/hp-slide2.jpg, small]")
                 .row
-                  .columns.small-11.small-centered.medium-8.medium-uncenter.medium-offset-4.large-5.large-offset-6
+                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
                     .callout
-                      h2.header-2.orange.thin-margin-bottom Are You Inspection-Ready?
-                      p.header-3 QualiCeutics links pharma clients to best practice in quality &amp; compliance.
-                      hr.hr-1
-                      strong.header-4 Our expertise includes:
-                      ul
-                        li Data Integrity Forensics
-                        li QC Laboratory Remediation
-                        li Computerized System Controls
-                        li Quality System Re-Engineering
-                        li Good Investigation Practices
-                        li Inspection Readiness
-                        li And More...
+                      h1.header-1.white.thin-margin-bottom Are you ready for an audit?
+                      hr.hr-orange
+                      p.header-3.white We work to make sure our clients create, modify and maintain controlled data.
+                      a(href="#").button.orange-outline Learn More &#8594;
+              li.orbit-slide.bg-cover(data-interchange="[images/hp-slide3.jpg, small]")
+                .row
+                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
+                    .callout
+                      h1.header-1.white.thin-margin-bottom Are you operating up to code?
+                      hr.hr-orange
+                      p.header-3.white With help from QualiCeutics, you can be inspection and submission ready.
+                      a(href="#").button.orange-outline Learn More &#8594;
+
         .content
           .row
-            .columns.small-11.small-centered.medium-10
-              h2.header-1.blue.text-center.thick-page-section Providing focused consulting services to the Pharmaceutical and Biotech industries.
+            .columns.small-11.small-centered.medium-8.text-center
+              h2.header-1.orange.thick-page-section Let's build a culture of quality
+              p Consultants at the QualiCeutics Group work to improve the quality and compliance environment of pharmaceutical clients by linking them to industry best practice.  We create strong partnerships and work diligently to help integrate and embed the new quality processes and systems into the whole organization
+
+        .lead-in
+          .row.grey-bg
+            .columns.small-12.medium-10.medium-centered
+              .row.small-up-1.medium-up-2.large-up-3.xtra-thick-page-section
+                .column.hp-block-grid
+                  .top-small-img(data-interchange="[images/leadin-1.png, small]").grey-overlay
+                  .white-bg.thin-page-section
+                    .row
+                      .columns.small-11.small-centered
+                        h3.header-2.blue.thin-margin-bottom Who We Are
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
+                        a(href="#").xtra-sm-link.thin-margin-top Consultant Profiles
+                .column.hp-block-grid
+                  .top-small-img(data-interchange="[images/leadin-2.png, small]").blue-overlay
+                  .white-bg.thin-page-section
+                    .row
+                      .columns.small-11.small-centered
+                        h3.header-2.blue.thin-margin-bottom Our Expertise
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
+                        a(href="#").xtra-sm-link.thin-margin-top View Our Services
+                .column.hp-block-grid
+                  .top-small-img(data-interchange="[images/leadin-3.png, small]").orange-overlay
+                  .white-bg.thin-page-section
+                    .row
+                      .columns.small-11.small-centered
+                        h3.header-2.blue.thin-margin-bottom Recent Projects
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
+                        a(href="#").xtra-sm-link.thin-margin-top Our Work
+        .bp-orange-cta
+          .row.bg-cover(data-interchange="[images/orange-tube.jpg, small]")
+            .columns.small-12.medium-9.medium-centered.xtra-thick-page-section
               .row
-                .columns.medium-9.medium-centered.large-8
-                  p QualiCeutics improves the compliance environment by linking clients to industry best practice and then works diligently to help integrate and embed the new quality processes and systems into the whole organization.
-                  strong.header-4 These fundamental values have consistently proven to deliver successful results and exceed client expectations:
-                  ul
-                    li Integrity &amp; Accountability
-                    li Partnership
-                    li Communication &amp; Transparency
-                    li Committment to Quality
-                  p No matter how big or small the project, the goal is to deliver a sustainable solution. Communication is key, so planning and execution are always timely and transparent. Let experienced consultants leverage their industry knowledge to help you consistently exceed regulatory standards and expectations of health authorities.
-          .callout-container
-            .callout-1
-              span Look for our brand new website, coming this spring!
-        .form-container
+                .columns.medium-12.small-12
+                  h2.header-2.white.bp-prev-icon Best Practices
+              .row
+                .columns.medium-6.small-12
+                  .callout.transparent-bg
+                    p.white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, fugit explicabo. Veritatis aut voluptate aperiam quibusdam laboriosam, autem vitae. Natus, sequi. Velit necessitatibus ut, sunt cum reiciendis non, voluptates ratione! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                .columns.medium-6.small-12
+                  .callout.white-bg
+                    p.header-3.thin Good Documentation Practices in the Quality Control Laboratory
+                    ul.best-practices-cta.thin-margin-top
+                      li
+                        a(href="#").dl-prev-icon
+                          p.tiny-link.caps Download
+                      li.divider
+                      li
+                        a(href="#")
+                          .icon.icon-linkedin.grey
+                      li
+                        a(href="#")
+                          .icon.icon-email
+
+
+
+        .form-container#contact
           .row
             .columns.small-11.small-centered.medium-9.large-8
               .row
@@ -77,11 +122,13 @@ html(lang="en").no-js
                       small Founder &amp; President
                   ul.no-bullet.contact-list
                     li
-                      i.icon.icon-phone
-                      span (585) 944-7046
+                      a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
+                        i.icon.icon-phone
+                        span (585) 944-7046
                     li
-                      i.icon.icon-email
-                      span josler@qualiceutics.com
+                      a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
+                        i.icon.icon-email
+                        span josler@qualiceutics.com
                 .columns.medium-8.large-7
                   //- OG form
                   form#contact.contact-form(name='contact', method='post', data-abide, novalidate)

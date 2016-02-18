@@ -3,10 +3,49 @@
 .orbit {
     ul.orbit-container {
         outline: none;
+        .orbit-previous,
+        .orbit-next                         {top:50%;}
+        .orbit-previous                     {left:3%;}
+        .orbit-next                         {right:3%;}
         .orbit-slide {
             min-height: rem-calc(500);
-            display: flex;
-            align-items: center;
+            position: relative;
+            .callout {
+                background-color: transparent;
+                // transform: translateY(26%);
+                .button {
+                    margin-top: rem-calc(15);
+                }
+            }
         }
     }
 }
+
+
+
+$lg-top-vert: 26%;
+$sm-top-vert: 12%;
+
+.valign-center {
+  transform: translateY($sm-top-vert);
+  -webkit-transform: translateY($sm-top-vert);
+  -o-transform:translateY($sm-top-vert);
+  -ms-transform:translateY($sm-top-vert);
+  position: relative;
+}
+
+@include mq(large) {
+    .valign-center {
+      transform: translateY($lg-top-vert);
+      -webkit-transform: translateY($lg-top-vert);
+      -o-transform:translateY($lg-top-vert);
+      -ms-transform:translateY($lg-top-vert);
+      position: relative;
+    }
+}
+
+@include mq(small-only) {
+    .orbit-previous,
+    .orbit-next                         {display:none;}
+}
+

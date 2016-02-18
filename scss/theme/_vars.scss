@@ -28,6 +28,14 @@ $blue         : #2d6caa;
 $grey         : #606264;
 $grey-dark    : #4b4c4e;
 $grey-light   : #e9e9e9;
+$grey-lk-light: #C1C1C1;
+$grey-light-headers: #bcbcbc;
+
+// Image overlays
+$orange-overlay :rgba(247, 161, 21, 0.55);
+$blue-overlay   :rgba(45, 108, 170, 0.55);
+$grey-overlay   :rgba(96, 98, 100, 0.55);
+
 
 
 $theme_colors: (
@@ -37,6 +45,8 @@ $theme_colors: (
   "grey":         $grey,
   "grey-dark":    $grey-dark,
   "grey-light":   $grey-light,
+  "grey-light-headers":   $grey-light-headers,
+
 );
 
 

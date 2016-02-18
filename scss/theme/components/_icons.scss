@@ -32,8 +32,10 @@
   text-transform: none !important;
   speak: none;
   line-height: 1;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all 0.25s ease;
 }
 
 .icon-email:before {
@@ -44,4 +46,49 @@
 }
 .icon-phone:before {
   content: "\63";
+}
+
+
+
+// Preview icons
+
+.bp-prev-icon,
+.dl-prev-icon,
+.our-values-icon {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+}
+
+.bp-prev-icon {
+    &:before {
+        width: 30px;
+        height: 46px;
+        left: -50px;
+        top: 0px;
+        background-image: url("../images/bp-icon.png");
+    }
+}
+
+.dl-prev-icon{
+    &:before {
+        width: 17px;
+        height: 22px;
+        left: -27px;
+        top: -2px;
+        background-image: url("../images/downl-icon.png");
+    }
+}
+
+.our-values-icon {
+    display: inline-block;
+    float: left;
+    max-width: rem-calc(30);
+    margin: rem-calc(0 10 0 0);
 }

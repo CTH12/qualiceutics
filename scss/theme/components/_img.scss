@@ -1,0 +1,38 @@
+
+
+.top-small-img,
+.profile-img {
+    background-size: cover;
+    display: block;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.top-small-img                          {min-height: rem-calc(150);}
+
+
+.grey-overlay,
+.blue-overlay,
+.orange-overlay {
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+}
+.grey-overlay                           {&:after {background-color: $grey-overlay;}}
+.blue-overlay                           {&:after {background-color: $blue-overlay;}}
+.orange-overlay                         {&:after {background-color: $orange-overlay;}}
+
+
+
+// Staff Bio Photos
+
+.profile-img {
+    min-height: rem-calc(360);
+    max-width: rem-calc(300);
+}

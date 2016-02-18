@@ -1,0 +1,36 @@
+
+
+.cir-number-list {
+    list-style-type: none;
+    counter-reset: li;
+    margin-left: rem-calc(36);
+    li {
+        position: relative;
+        counter-increment: li;
+        &:before {
+            content: counter(li);
+            border-radius: 50%;
+            border: solid 1px $white;
+            text-align: center;
+            position: absolute;
+            left: - rem-calc(35);
+            top: 0px;
+            width: rem-calc(25);
+            height: rem-calc(25);
+        }
+    }
+}
+
+
+.leader-box {
+    padding: rem-calc(40);
+    border: solid 1px $grey-light-headers;
+    height: 100%;
+    transition: all 0.3s ease;
+    .header-3 {
+        font-size: rem-calc(28);
+    }
+    #panel {
+        display: none;
+    }
+}

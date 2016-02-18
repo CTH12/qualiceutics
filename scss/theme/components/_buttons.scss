@@ -35,9 +35,14 @@
     border: 1px solid $orange;
     color: $orange;
     transition: all 0.3s ease;
+    padding: rem-calc(15 30);
     &:hover {
         background-color: $orange-trans;
         color: $orange;
     }
 
 }
+
+
+
+

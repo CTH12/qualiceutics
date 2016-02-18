@@ -41,3 +41,50 @@
   font-size: rem-calc(19);
   text-transform: uppercase;
 }
+
+//
+.caps                               {text-transform: uppercase;}
+.thin                               {font-weight: 400;}
+.tagline                            {margin-bottom: rem-calc(2);}
+
+
+// Links
+
+.xtra-sm-link {
+    font-size: rem-calc(15);
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    color: $grey-lk-light;
+    transition: all 0.3s ease-out;
+    &:after {
+        content: '\2192';
+        position: relative;
+        right: -15px;
+        top: 0px;
+        font-size: rem-calc(20);
+        color: $grey-lk-light;
+        transition: all 0.3s ease-out;
+    }
+    &:hover {
+        color: $grey;
+        &:after {
+
+            right: -20px;
+        }
+    }
+}
+
+.tiny-link {
+    font-size: rem-calc(12);
+    color: $grey;
+}
+
+
+
+
+
+.lorem {
+    color: black;
+    background: yellow;
+}
