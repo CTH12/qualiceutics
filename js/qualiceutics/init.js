@@ -172,18 +172,15 @@
 
       });
 
-        // $('.accordion-title').click(function() {
+      // have active accordion panel scroll to the top of view
+      $('.accordion li > a').click(function() {
+            var self = this;
+            setTimeout(function () {
+            var theOffset = $(self).offset();
+            $('body,html').animate({ scrollTop: theOffset.top - 10 });
+            }, 500);
 
-        //         console.log('Those tabs sure did change!');
-
-        //         var elem = $(this);
-
-        //         var containerPos = $(elem).offset().top - 150;
-        //         $('html, body').animate({ scrollTop: containerPos }, 800);
-        //         console.log(containerPos);
-        //         console.log(elem.parent());
-
-        // });
+      });
 
 
 
