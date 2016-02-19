@@ -5,7 +5,7 @@
 // global elements
 @import "global/base";
 @import "global/header";
-// @import "global/footer";
+@import "global/footer";
 @import "global/typography";
 
 // components
@@ -113,41 +113,7 @@
   }
 }
 
-.global-footer {
-  @include page-section(rem-calc(40));
-  background-color: $grey-dark;
-  text-align: center;
-  color: $grey-light;
-  text-transform: uppercase;
-  font-size: rem-calc(18);
-  p {
-    margin-bottom: 0;
-    line-height: 1;
-  }
-  a {
-    &:before {
-      content: "\0a0";
-      display: inline-block;
-      width: 1px;
-      height: rem-calc(32);
-      opacity: 0.3;
-      background-color: $grey-light;
-      margin-right: rem-calc(20);
-      vertical-align: middle;
-    }
-    color: inherit;
-    margin-left: rem-calc(20);
-  }
-  i {
-    font-size: rem-calc(20);
-    position: relative;
-    bottom: rem-calc(-3);
-  }
 
-  @include mq(medium) {
-    @include page-section(rem-calc(84));
-  }
-}
 
 .content {
   position: relative;

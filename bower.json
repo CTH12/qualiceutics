@@ -19,6 +19,7 @@
     "howler.js": "howler#~1.1.27",
     "konami-js": "*",
     "clipboard": "~1.5.5",
-    "motion-ui": "~1.1.1"
+    "motion-ui": "~1.1.1",
+    "hover": "^2.0.2"
   }
 }

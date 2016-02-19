@@ -1,0 +1,102 @@
+
+.global-footer {
+
+  .top-footer {
+    @include page-section(rem-calc(30));
+    .footer-links {
+      list-style-type: none;
+      li {
+        display: block;
+        padding: rem-calc(10 0);
+        text-align: center;
+      }
+    }
+    a {
+      color: $white;
+      font-size: rem-calc(15);
+      transition: all 0.25s ease;
+      &:hover {
+        color: $orange;
+      }
+    }
+    .contact-footer {
+      a {
+        clear: left;
+        float: none;
+        text-align: center;
+        display: block;
+      }
+    }
+    @include mq(medium) {
+      @include page-section(rem-calc(70));
+      .footer-links {
+        li {
+          padding: rem-calc(10 30);
+          display: inline-block;
+        }
+      }
+      .contact-footer {
+        a {
+          clear: left;
+          float: left;
+        }
+      }
+    }
+  // end of top-footer
+  }
+
+  .lower-footer {
+    @include page-section(rem-calc(30));
+    background-color: $grey-dark;
+    text-align: center;
+    color: $grey-light;
+    text-transform: uppercase;
+    font-size: rem-calc(18);
+    p {
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    a {
+      &:before {
+        content: "\0a0";
+        display: inline-block;
+        width: 1px;
+        height: rem-calc(32);
+        opacity: 0.3;
+        background-color: $grey-light;
+        margin-right: rem-calc(20);
+        vertical-align: middle;
+      }
+      color: inherit;
+      margin-left: rem-calc(20);
+    }
+    i {
+      font-size: rem-calc(20);
+      position: relative;
+      bottom: rem-calc(-3);
+    }
+
+    .footer-brand {
+      text-align: center;
+      p {
+        padding: rem-calc(10 0);
+      }
+    }
+
+
+    @include mq(medium) {
+      @include page-section(rem-calc(45));
+      .footer-brand {
+        text-align: left;
+        p {
+          padding: rem-calc(10 30);
+        }
+      }
+    }
+  // end of lower-footer
+  }
+
+// end of global-footer
+}
+
+

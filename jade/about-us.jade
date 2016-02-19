@@ -45,7 +45,7 @@ html(lang="en").no-js
                       p.caps.white Commitment to Quality
 
 
-        .content
+        .xtra-thick-margin-top
           .row
             .columns.small-11.small-centered.medium-8.text-center
               h2.header-1.orange.thin-margin-bottom Consultants
@@ -65,71 +65,126 @@ html(lang="en").no-js
                 .columns.small-12
                   .leader-box
                     .row
-                      .columns.small-4
+                      .columns.medium-4.small-12
                         .profile-img(data-interchange="[images/staff-pics/jolser.png, small]")
-                      .columns.small-8
+                      .columns.medium-8.small-12
                         h3.header-3.tagline John Olser
                         p.caps.thin Founder &amp; President
                         p John E. Osler is a Senior Consultant in the Pharmaceutical and Biotechnology industries. After serving in the industry for more than 20 years, Osler founded The QualiCeutics Group, LLC., to help pharma clients meet the regulatory requirements associated with manufacturing safe and effective medicines. He specializes in GMP Laboratory Compliance, which includes data integrity forensics and good laboratory practice related to computerized laboratory systems. Since founding the consulting group in 2012, Osler has worked with both large and small companies to improve their quality culture and inspection-readiness.
-                        a(data-toggle="panel") Read More
+                        a#exp(data-toggle="panel").caps.exp-panel Read More
                         #panel(data-toggler data-animate="hinge-in-from-top hinge-out-from-top")
                           p Osler’s corporate experience included leadership positions at Wyeth Research, Celltech, and UCB Pharma. During that period, he held management and international roles in Analytical Development, Quality Control, Knowledge Management, and Project Management. His analytical teams contributed to more than 10 drug approvals, including successful face-to-face interactions with health inspectors and direct interactions with FDA Reviewers. While in the corporate environment, Osler successfully led global technology transfer projects and his passion for continuous improvement led to leadership roles in corporate-wide initiatives.
                           p Osler holds a BS in Chemistry from the Rochester Institute of Technology. He lives with his family in western New York, where they enjoy all four seasons, including many inches of snow each winter, and the occasional Buffalo-style chicken wing.
 
-
-
-
-
-
-
-        .form-container#contact
+        .team-members
           .row
-            .columns.small-11.small-centered.medium-9.large-8
+            .columns.small-12.medium-11.medium-centered.xtra-thick-page-section
+              .row.thin-margin-bottom
+                .columns.small-12.text-left
+                  h3.header-3.caps.grey-light-headers Associate Consultants
               .row
-                .columns.medium-4.large-5
-                  h2.header-1 Want To <br /> Learn More?
-                  span.header-3 Contact us today.
-                  hr.hr-1.thick-margin-bottom
-                  .thin-margin-bottom
-                    strong.header-2.no-margin John Osler
-                    span.header-3
-                      small Founder &amp; President
-                  ul.no-bullet.contact-list
-                    li
-                      a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
-                        i.icon.icon-phone
-                        span (585) 944-7046
-                    li
-                      a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
-                        i.icon.icon-email
-                        span josler@qualiceutics.com
-                .columns.medium-8.large-7
-                  //- OG form
-                  form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
-                    .alert.callout(data-abide-error, style='display: none;')
-                      span Please be sure to fill out all required fields
-                    input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
-                    .row
-                      .columns.medium-6
-                        input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
-                      .columns.medium-6
-                        input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
-                    textarea#message(name='message', required, placeholder="Compose Message")
-                    input#submit(type='submit', name='submit', value='Send').button-1.alt
-                  //- #success
-                    span
-                      p Your message was sent succssfully! I will be in touch as soon as I can.
-                  //- #error
-                    span
-                      p Something went wrong, try refreshing and submitting the form again.
+                .columns.small-12
+                  .assoc-box
+                    .row.small-up-1.medium-up-3.large-up-3
+                      .column
+                        .associate-bio.orange-bot-border.page-section(data-open="rwiegman")
+                          .profile-img(data-interchange="[images/staff-pics/richard-wiegman-associate.jpg, small]")
+                          p.tagline.thin.thin-margin-top Richard Wiegman
+                          p.assoc-title.caps.grey-dark.thin-margin-bottom Principal Consultant
+                          a(href="#").xtra-sm-link Read Profile
+                        #rwiegman.reveal.large(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+                          .row.thin-page-section
+                            .columns.small-11.small-centered.text-right
+                              button.close-button(data-close aria-label="Close modal" type="button")
+                                span(aria-hidden="true") &times;
+                          .row
+                            .columns.small-12.medium-10.medium-centered
+                              .row
+                                .columns.small-12.medium-4
+                                  .associate-bio.margin-bottom
+                                    .profile-img(data-interchange="[images/staff-pics/richard-wiegman-associate.jpg, small]")
+                                    p.tagline.thin.thin-margin-top Richard Wiegman
+                                    p.assoc-title.caps.grey-dark.thin-margin-bottom Principal Consultant
+                                .columns.small-12.medium-8
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+
+                      .column
+                        .associate-bio.orange-bot-border.page-section(data-open="kransom")
+                          .profile-img(data-interchange="[images/staff-pics/kathy-ransom-associtate.jpg, small]")
+                          p.tagline.thin.thin-margin-top Kathy Ransom
+                          p.assoc-title.caps.grey-dark.thin-margin-bottom Senior Compliance Consultant
+                          a(href="#").xtra-sm-link Read Profile
+                        #kransom.reveal.large(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+                          .row.thin-page-section
+                            .columns.small-11.small-centered.text-right
+                              button.close-button(data-close aria-label="Close modal" type="button")
+                                span(aria-hidden="true") &times;
+                          .row
+                            .columns.small-12.medium-10.medium-centered
+                              .row
+                                .columns.small-12.medium-4
+                                  .associate-bio.margin-bottom
+                                    .profile-img(data-interchange="[images/staff-pics/kathy-ransom-associtate.jpg, small]")
+                                    p.tagline.thin.thin-margin-top Kathy Ransom
+                                    p.assoc-title.caps.grey-dark.thin-margin-bottom Senior Compliance Consultant
+                                .columns.small-12.medium-8
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+
+                      .column
+                        .associate-bio.orange-bot-border.page-section(data-open="dmoren")
+                          .profile-img(data-interchange="[images/staff-pics/dan-moreno-associate.jpg, small]")
+                          p.tagline.thin.thin-margin-top Dan Moreno
+                          p.assoc-title.caps.grey-dark.thin-margin-bottom Senior Consultant
+                          a(href="#").xtra-sm-link Read Profile
+                        #dmoren.reveal.large(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+                          .row.thin-page-section
+                            .columns.small-11.small-centered.text-right
+                              button.close-button(data-close aria-label="Close modal" type="button")
+                                span(aria-hidden="true") &times;
+                          .row
+                            .columns.small-12.medium-10.medium-centered
+                              .row
+                                .columns.small-12.medium-4
+                                  .associate-bio.margin-bottom
+                                    .profile-img(data-interchange="[images/staff-pics/dan-moreno-associate.jpg, small]")
+                                    p.tagline.thin.thin-margin-top Dan Moreno
+                                    p.assoc-title.caps.grey-dark.thin-margin-bottom Senior Consultant
+                                .columns.small-12.medium-8
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+
+                      .column
+                        .associate-bio.orange-bot-border.page-section(data-open="sanasta")
+                          .profile-img(data-interchange="[images/staff-pics/stephanie-anastasiou-associate.jpg, small]")
+                          p.tagline.thin.thin-margin-top Stephanie (Blythe) Anastasiou
+                          p.assoc-title.caps.grey-dark.thin-margin-bottom QC Consultant
+                          a(href="#").xtra-sm-link Read Profile
+                        #sanasta.reveal.large(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+                          .row.thin-page-section
+                            .columns.small-11.small-centered.text-right
+                              button.close-button(data-close aria-label="Close modal" type="button")
+                                span(aria-hidden="true") &times;
+                          .row
+                            .columns.small-12.medium-10.medium-centered
+                              .row
+                                .columns.small-12.medium-4
+                                  .associate-bio.margin-bottom
+                                    .profile-img(data-interchange="[images/staff-pics/stephanie-anastasiou-associate.jpg, small]")
+                                    p.tagline.thin.thin-margin-top Stephanie (Blythe) Anastasiou
+                                    p.assoc-title.caps.grey-dark.thin-margin-bottom QC Consultant
+                                .columns.small-12.medium-8
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem
+                                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
 
 
-      footer.global-footer
-        .row
-          .columns
-            p &copy; 2016, The Qualiceutics Group, LLC
-              a(href="#", target="_blank")
-                i.icon.icon-linkedin
-                span.show-for-sr LinkdIn
+
+
+      include inc/_footer.jade
 
     include inc/_scripts.jade

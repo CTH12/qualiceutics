@@ -30,7 +30,64 @@
     .header-3 {
         font-size: rem-calc(28);
     }
+    .exp-panel {
+      text-align: right;
+      color: $grey-dark;
+      position:relative;
+      float: right;
+      padding-right: rem-calc(10);
+      bottom: rem-calc(10);
+      font-size: rem-calc(14);
+      &:after {
+        content: ' ';
+        position: relative;
+        display: inline-block;
+        right: -10px;
+        top: 0;
+        background-image: url("../images/down-carrot.png");
+        background-size: cover;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        width:18px;
+        height:11px;
+        transition: all 0.35s ease;
+
+      }
+    }
+    .exp-panel.close-exp:after {
+      transform: rotate(-180deg);
+      transition: all 0.35s ease;
+    }
+
     #panel {
         display: none;
     }
+}
+
+.assoc-box {
+  .orange-bot-border                                      {border-bottom: solid 6px $orange;}
+  .associate-bio {
+    .tagline                                              {margin-bottom: -2px;}
+    .xtra-sm-link {
+      color: $grey;
+      &:after {
+        color: $grey;
+      }
+    }
+    .assoc-title{
+      font-size: rem-calc(15);
+    }
+  }
+}
+
+
+@media #{$small-only} {
+  .leader-box {
+    .profile-img {
+      background-position-y: 0px;
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+// end of small query
 }

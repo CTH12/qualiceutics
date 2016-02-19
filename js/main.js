@@ -38,6 +38,11 @@
         return drupal_land;
       },
 
+
+
+
+
+
       /**
        * smooth scroll to a section of the page
        * @return {N/A}
@@ -160,7 +165,22 @@
           }
         });
       });
+
+
+      $('#exp').click(function() {
+          if ($(this).html() === 'Read More') {
+              $(this).html('Close');
+              $(this).addClass('close-exp');
+          } else {
+              $(this).html('Read More');
+              $(this).removeClass('close-exp');
+          }
+
+      });
     }
+
+
+
 
   };
 
