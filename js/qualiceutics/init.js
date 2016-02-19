@@ -160,7 +160,7 @@
         });
       });
 
-
+      // change html text when clicked
       $('#exp').click(function() {
           if ($(this).html() === 'Read More') {
               $(this).html('Close');
@@ -171,6 +171,22 @@
           }
 
       });
+
+        // $('.accordion-title').click(function() {
+
+        //         console.log('Those tabs sure did change!');
+
+        //         var elem = $(this);
+
+        //         var containerPos = $(elem).offset().top - 150;
+        //         $('html, body').animate({ scrollTop: containerPos }, 800);
+        //         console.log(containerPos);
+        //         console.log(elem.parent());
+
+        // });
+
+
+
     }
 
 
@@ -182,7 +198,12 @@
 
   // initialize the things
   $(document).ready(function () {
+
     $(document).foundation();
+
+
+
+
     Qual.init();
   });
 

@@ -1,0 +1,465 @@
+doctype html
+html(lang="en").no-js
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Qualiceutics
+    meta(name="description", content="Qualiceutics")
+    include inc/_head.jade
+
+  body
+    a(href="#main").show-for-sr Skip to main content
+    .container
+      include inc/_header.jade
+
+      main#main
+        .hero
+          .small-banner(data-interchange="[images/our-expertise.jpg, small]")
+
+        .page-section.medium-xtra-thick-page-section.lt-bot-border
+          .row
+            .columns.small-11.small-centered.medium-8.text-center
+              h2.header-1.orange.thin-margin-bottom Are you inspection-ready?
+              p Creating a culture of quality and compliance is our main goal--but we don’t stop there. Our process is optimized to make sure we leave each client with a compliant solution while supporting the manufacturing of quality products and exceeding the expectations of health inspectors.
+
+        .process-tabs.margin-top
+          .row
+            .columns.small-12.medium-11.medium-centered
+              .row
+                .columns.small-12.medium-7.callout
+                  img(src="images/process-icon.png", alt="our values").process-icon
+                  h2.header-2.margin-bottom The Qualiceutics Procress
+                  p With a proven track record of success, we follow four steps to help our clients build a culture of quality. We work with each organization’s specific needs, product, and situation to ensure each project contains the right level of compliance measures and is adequately planned and resourced to effectively deliver a sustainable solution.
+                .columns.small-12.medium-5.callout
+                  ul.tabs.vertical.process-link.cir-number-list(data-tabs id="process-content")
+                    li.tabs-title.is-active
+                      a(href="#assessment" aria-selected="true") Assessment
+                    li.tabs-title
+                      a(href="#planning" aria-selected="true") Planning
+                    li.tabs-title
+                      a(href="#implementation" aria-selected="true") Implementation
+                    li.tabs-title
+                      a(href="#sustainability" aria-selected="true") Sustainability
+          .tabs-content(data-tabs-content="process-content")
+            .row.orange-bg.bg-cover.top-indent(data-interchange="[images/process.png, small]")
+              .columns.small-12.medium-11.medium-centered
+                #assessment.tabs-panel.is-active
+                  .row
+                    .columns.small-12
+                      h3.header-4.white Assessment
+                      p.white.pro-lead-in In an effort to determine the client’s current level of compliance, our assessment process includes one or more of the steps below:
+                  .row.margin-top
+                    .columns.small-12.medium-10.medium-centered
+                      .row.show-for-medium
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Auditing
+                            li
+                              p Data Integrity Assessments
+                            li
+                              p Process Mapping (i.e. flow charting a particular process)
+                            li
+                              p Document Review
+                            li
+                              p Shadowing personnel
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Training &amp; Staff Skill Assessment
+                            li
+                              p Gap Assessment (comparing the client’s procedures and processes to current industry standards)
+                            li
+                              p Risk Analysis
+                            li
+                              p Formal Summary Report
+                            li
+                              p Recommendations for Improvement
+                      .row.show-for-small-only
+                        .columns.small-12
+                          ul.process-inner-lists
+                            li
+                              p Auditing
+                            li
+                              p Data Integrity Assessments
+                            li
+                              p Process Mapping (i.e. flow charting a particular process)
+                            li
+                              p Document Review
+                            li
+                              p Shadowing personnel
+                            li
+                              p Training &amp; Staff Skill Assessment
+                            li
+                              p Gap Assessment (comparing the client’s procedures and processes to current industry standards)
+                            li
+                              p Risk Analysis
+                            li
+                              p Formal Summary Report
+                            li
+                              p Recommendations for Improvement
+                #planning.tabs-panel
+                  .row
+                    .columns.small-12
+                      h3.header-4.white Planning
+                      p.white.pro-lead-in Once the assessment is complete and reviewed by the client, we provide project management resources and staff tailored to what your organization needs. Our planning includes:
+                  .row.margin-top
+                    .columns.small-12.medium-10.medium-centered
+                      .row.show-for-medium
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Project governance and escalation planning
+                            li
+                              p Project metrics
+                            li
+                              p Establishing resources and a budget
+                            li
+                              p Working collaboratively to create a schedule
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Gathering a team and creating work streams, if needed
+                            li
+                              p Implementing agreed recommendations
+                            li
+                              p Utilizing a formal planning tool
+                      .row.show-for-small-only
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Project governance and escalation planning
+                            li
+                              p Project metrics
+                            li
+                              p Establishing resources and a budget
+                            li
+                              p Working collaboratively to create a schedule
+                            li
+                              p Gathering a team and creating work streams, if needed
+                            li
+                              p Implementing agreed recommendations
+                            li
+                              p Utilizing a formal planning tool
+                #implementation.tabs-panel
+                  .row
+                    .columns.small-12
+                      h3.header-4.white Implementation
+                      p.white.pro-lead-in We then work together with the client to carry out the agreed upon plan. The implementation phase generally consists of:
+                  .row.margin-top
+                    .columns.small-12.medium-10.medium-centered
+                      .row.show-for-medium
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Adding additional resources, if needed
+                            li
+                              p Regular progress and metric reports to client and governance team (communication and transparency are key)
+                            li
+                              p Issue Resolution
+                            li
+                              p Training
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Technical writing
+                            li
+                              p Delivering within budget and on time
+                            li
+                              p Close-out report
+                      .row.show-for-small-only
+                        .columns.small-12
+                          ul.process-inner-lists
+                            li
+                              p Adding additional resources, if needed
+                            li
+                              p Regular progress and metric reports to client and governance team (communication and transparency are key)
+                            li
+                              p Issue Resolution
+                            li
+                              p Training
+                            li
+                              p Technical writing
+                            li
+                              p Delivering within budget and on time
+                            li
+                              p Close-out report
+                #sustainability.tabs-panel
+                  .row
+                    .columns.small-12
+                      h3.header-4.white Sustainability
+                      p.white.pro-lead-in We strive to paint a picture of success for our clients. Our work would not be complete without leaving the organization in a situation where they are able to maintain the new processes and systems put in place by QualiCeutics. Sustainability is achieved when:
+                  .row.margin-top
+                    .columns.small-12.medium-10.medium-centered
+                      .row.show-for-medium
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p The compliance culture is positively changed
+                            li
+                              p Processes are efficient and clear
+                            li
+                              p The client consistently exceeds the quality standards (i.e Quality Assurance department is stronger within the organization)
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p Roles and responsibilities are aligned
+                            li
+                              p Training is enhanced and complete
+                            li
+                              p The client is confident they can handle an inspection
+                      .row.show-for-small-only
+                        .columns.small-12.medium-6
+                          ul.process-inner-lists
+                            li
+                              p The compliance culture is positively changed
+                            li
+                              p Processes are efficient and clear
+                            li
+                              p Roles and responsibilities are aligned
+                            li
+                              p Training is enhanced and complete
+                            li
+                              p The client consistently exceeds the quality standards (i.e Quality Assurance department is stronger within the organization)
+                            li
+                              p The client is confident they can handle an inspection
+
+        .page-section.medium-xtra-thick-page-section
+          .row
+            .columns.small-11.small-centered.medium-8.text-center
+              h2.header-1.orange.thin-margin-bottom Recent Projects
+              p With over 20 years of experience, our consultants work hard to ensure our clients are inspection-ready, and the medicines they make are up to industry standards. Check out some of our more recent work below.
+        .process-accord
+          .row
+            .columns.small-12.medium-10.medium-centered
+              ul.accordion(data-accordion)
+                li.accordion-item.is-active(data-accordion-item)
+                  a.accordion-title Retrospective Review of OOS Investigations
+                  .accordion-content(data-tab-content)
+                    p A large, generic Indian drug manufacturer was under regulatory scrutiny for poor investigation and laboratory practices.  Consultants from QualiCeutics joined others to perform a retrospective review of past OOS investigations and chromatographic test results.
+                    p The OOS retrospective review of manufacturing and laboratory investigations was led by QualiCeutics, who managed multiple consultant resources.  The project was successfully delivered in less than 30 days and included over 200 formal retrospective reviews, along with a final summary report to the client.
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Data Integrity:  Assessment of QC Computerized Lab Systems
+                  .accordion-content(data-tab-content)
+                    p QualiCeutics joined other consultants to help implement a site-wide Quality Improvement initiative for a European pharma client.  For this project, QualiCeutics was specifically brought in to formally assess the Data Integrity processes and practices related to all stand-alone computerized Lab Systems within the QC department.
+                    p Over a period of several months, practices related to the generation, modification, security, traceability, and storage of electronic records and signatures were reviewed for more than 25 instrument types.  Findings and recommendations for remediation, based on compliance with EU and US regulations, were detailed in a final report to the client.
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Project Management: LIMS Implementation
+                  .accordion-content(data-tab-content)
+                    p A global manufacturer of sterile injectables operating under an FDA Warning Letter was in need of an upgrade to their antiquated LIMS system.  The client chose to upgrade to ThermoFisher’s latest SampleManager LIMS version. The initial phase of the project planning had been over simplified, suffering from minimal user requirements and process mapping.  The implementation was also complicated by the addition of new functional modules, including Environmental Monitoring.
+                    p The QualiCeutics Group was chosen to lead the second phase of the project.  Working with a team of Subject Matter Experts, QualiCeutics successfully re-built the project plan, re-focused the team and lead the project through the qualification phase.
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Retooling of QC Training Program
+                  .accordion-content(data-tab-content)
+                    p As part of a larger remediation effort, QualiCeutics was chosen to lead a workstream tasked with re-engineering a Quality Control training program. The program had to support approximately 125 staff members, and no formal training material existed at the time.
+                    p A new curriculum was developed to support multiple roles and new processes  were implemented and integrated within the client’s local Learning Management Systems (LMS).  The effort included the creation of more than 30 QC training courses, with each course containing an instruction guide, a student guide and a skill assessment form.  Modules ranged from basic lab practices, such as  performing pH measurements, to more complex skills like chromatographic review techniques.  Responsibilities also included the delivery of classroom training sessions without impact to productivity, which QualiCeutics was able to deliver.
+
+        .page-section.medium-xtra-thick-page-section
+          .row
+            .columns.small-11.small-centered.medium-8.text-center
+              h2.header-1.orange.thin-margin-bottom Areas of Expertise
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nesciunt voluptatum sit. Doloremque reprehenderit, corporis laboriosam veniam sed voluptatem esse voluptates, ad sunt eius enim perspiciatis laudantium consequatur, necessitatibus adipisci!
+        .process-accord.xtra-thick-margin-bottom
+          .row
+            .columns.small-12.medium-10.medium-centered
+              ul.accordion(data-accordion)
+                li.accordion-item.is-active(data-accordion-item)
+                  a.accordion-title Quality Systems
+                  .accordion-content(data-tab-content)
+                    p Health regulators expect drug manufacturers to consistently and predictably make medicine with a high degree of quality. Needing to operate in a state of control, companies are expected to create and maintain robust processes and procedures for controlling manufacturing in their facility according to standards and guidelines laid out by their local health agencies.
+
+                    p Our trained consultants help clients answer important questions. Are your quality systems effective and robust?  Do they follow the current guidance?  Would inspectors agree that you are operating in a state of control?
+
+                    p Characteristics of an effective Quality System plan include:
+                    ul
+                      li
+                        p Strong, responsible, and independent Quality Assurance site management
+                      li
+                        p Transparent communication of quality issues within the whole organization
+                      li
+                        p Willingness and responsiveness to fix said issues
+                      li
+                        p An environment of continuous process improvement
+                    p QualiCeutics has experience evaluating and improving processes that fall under the Quality Systems umbrella, including:
+                    .row
+                      .columns.small-12.medium-6
+                        ul
+                          li
+                            p Change Control
+                          li
+                            p Document Control &amp; Review
+                          li
+                            p Auditing
+                          li
+                            p Computer System Validation
+                          li
+                            p Environmental Monitoring
+                      .columns.small-12.medium-6
+                        ul
+                          li
+                            p OOS Investigations
+                          li
+                            p Training
+                          li
+                            p Equipment Qualification
+                          li
+                            p QA Release
+                          li
+                            p Cleaning Validation
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Data Integrity Forensics
+                  .accordion-content(data-tab-content)
+                    p Health inspectors continue to focus their attention on Data Integrity when auditing a manufacturing site.  Many companies are now facing large fines and bans on imports due to poor electronic data handling practices discovered by these inspectors. In some cases, recorded data has even been knowingly falsified.
+                    p In most cases, companies unintentionally put themselves at risk by continuing to rely on paper documentation while simultaneously generating electronic records. If you are at risk for failing this sort of audit, trust QualiCeutics – we know how to build robust practices around data integrity.
+                    p Manufacturers use many computerized systems to produce and test medicines, and the electronic records created by these systems must be controlled.  This is especially true in the QC Laboratory, where Chromatography Data Systems create thousands of files.  The processes used to manage these systems are more complicated than paper records and require a thorough understanding of the regulations.
+                    p You need to ask yourself the following questions regarding your control of computerized systems:
+                    ul
+                      li
+                        p Are there formal processes in place to control username and passwords or share administrative rights?
+                      li
+                        p Do user privileges prevent or track multiple changes to chromatographic test data? Are procedures in                      li
+                        p place to control chromatographic integration practices?
+                      li
+                        p Are sufficient audit trails in place?
+                      li
+                        p Is the data adequately backed up and maintained?
+                      li
+                        p Is all data traceable and available for an inspector to review, if required?
+                      li
+                        p Are instrument reports set up properly?
+                    p We know the systems and processes required to assure each client creates, modifies, and maintains controlled data. It’s extremely important to be proactive when dealing with data integrity.
+
+                    p Contact QualiCeutics to perform a deep-dive assessment into your data handling practices.  Let us leave you confident that your electronic records are consistently authentic, traceable, and secure.
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Laboratory Compliance
+                  .accordion-content(data-tab-content)
+                    p Laboratory Compliance is the core of everything we do at QualiCeutics. We’ll go to great lengths making sure your Quality Control unit is operating in an up-to-date, inspection-ready environment, ensuring all test data meets the quality requirements and supports the manufacture of safe products.
+
+                    p Some of our laboratory consulting services include:
+                    ul
+                      li
+                        p Laboratory Investigations
+                      li
+                        p Good Chromatographic Practices
+                      li
+                        p Instrument &amp; Equipment Qualification
+                      li
+                        p Good Documentation &amp; Data Review Practices
+                      li
+                        p Training &amp; Skill Assessment
+                      li
+                        p Standard &amp; Sample Chain of Custody
+
+                    p Consultants from QualiCeutics have a broad knowledge base of the types of equipment and instruments used in pharma manufacturing and testing.  Our expert consultants know the formal processes necessary to integrate and maintain a fully functional metrology program at your site. Our consulting expertise is broad, but we will tailor programs to fit the specific needs of your organization.
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Computerized System Validation
+                  .accordion-content(data-tab-content)
+                    p Any computer system used in the manufacturing or testing of pharmaceuticals must be validated or qualified and any custom programing or configuration settings must be proven to work. Computer System Validation (CSV) is a formal process used to verify that a computer and software application is installed, functions as intended and is controlled in a reproducible way.
+
+                    p QualiCeutics has successfully led or participated in the installation and validation of several types of complex enterprise systems used by Quality Assurance and Quality Control, including:
+                    ul
+                      li
+                        p LIMS – Laboratory Information Management Systems
+                      li
+                        p CDS – Chromatography Data Acquisition Systems
+                      li
+                        p EDMS – Electronic Document Management Systems
+
+                    p Often overlooked are the local, non-networked computerized laboratory systems.  Our consultants have assessed many QC instrument types using GAMP principles and can provide recommendations to include in your next quality improvement program.
+
+                    p Some CSV expertise include:
+                    ul
+                      li
+                        p Project Management and Planning
+                      li
+                        p Process Mapping
+                      li
+                        p Gap Assessment with 21 CFR Part 11 regulations
+                      li
+                        p Supplier/Vendor Audits
+                      li
+                        p User Requirement Specifications
+                      li
+                        p Setting Functional Specifications &amp; Acceptance Testing
+                      li
+                        p Data Migration and  Report Verification
+                      li
+                        p Installation, Operation and Performance Qualification (IQ, OQ, PQ)
+                      li
+                        p Protocol Generation and Execution
+                      li
+                        p Training for Go-live
+                      li
+                        p Periodic System Reviews and Report Optimization
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Project Management
+                  .accordion-content(data-tab-content)
+                    p QualiCeutics consultants are experienced when it comes to project management, and have a detailed understanding of the pharmaceutical development and regulatory submission processes.
+
+                    p Under our leadership, organizations have learned how to successfully deliver technical transfer projects for manufacturing processes and analytical method transfer activities.  Our expertise also includes managing the introduction and integration of electronic Quality Systems throughout your organization.
+
+                    p Let us help plan and implement your next process improvement project, where you’ll be left confidently operating in a compliant environment while consistently meeting, or exceeding, the expectations of health inspectors.
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Inspection &amp; Submission Readiness
+                  .accordion-content(data-tab-content)
+                    p Be inspection ready. When practiced correctly, this often overlooked process can offer insight into the strengths and weakness of a manufacturing site. QualiCeutics can help prepare your organization for your next Pre-Approval Inspection by performing in-depth data reviews of:
+                    ul
+                      li
+                        p Quality (CMC) Submission Packages
+                      li
+                        p Batch Records
+                      li
+                        p API and Drug Product Stability Profiles
+                      li
+                        p Method Validation Reports
+                      li
+                        p QC Release Data
+
+                    p We can also perform mock audits of select departments and staff, in advance of an unannounced inspection, to gauge how well your Quality Systems meet the compliance standards. Take every advantage available and optimize your inspection-and-submission readiness. Get your team prepared with our help.
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title GMP  Technical Training
+                  .accordion-content(data-tab-content)
+                    p Current Good Manufacturing Practice (cGMPs) always include a training component, and companies seemingly meet this requirement. Unfortunately, most organizations do not have a robust or effective enough training program and practices are not typically harmonized at the site.  Many programs are informal and administered by staff who have not been routinely supported, resulting in training that offers little value.
+
+                    p At QualiCeutics, we believe a vigorous training program is the most effective way to build a culture of quality at your organization. We have experience designing effective training programs, including:
+
+                    ul
+                      li
+                        p Curriculum Development
+                      li
+                        p Training Modules
+                      li
+                        p Training Material (like Instructor Guides &amp; Student Guides)
+                      li
+                        p Proficiency Tests
+                      li
+                        p Integration with Learning Management Systems
+                      li
+                        p Classroom Training Sessions
+
+                    p So talk with us today about creating a powerful training program that will make a major difference for your organization.
+
+                li.accordion-item(data-accordion-item)
+                  a.accordion-title Technical Writing
+                  .accordion-content(data-tab-content)
+                    p QualiCeutics has experience writing clear and concise technical documents that will help minimize errors and pass the rigors of the inspection and submission processes.  Contact us to help write your technical documents, including:
+                    ul
+                      li
+                        p SOPs (Standard Operating Procedures)
+                      li
+                        p Technical Protocols &amp; Reports
+                      li
+                        p Test Method Validation reports
+                      li
+                        p Stability Reports
+
+
+      include inc/_footer.jade
+
+    include inc/_scripts.jade

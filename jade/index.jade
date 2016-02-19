@@ -63,25 +63,25 @@ html(lang="en").no-js
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Who We Are
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
-                        a(href="#").xtra-sm-link.thin-margin-top Consultant Profiles
+                        p The QualiCeutics Group is a consulting firm that works with clients in the pharma and biotech industries.
+                        a(href="about-us.html").xtra-sm-link.thin-margin-top Consultant Profiles
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-2.png, small]").blue-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Our Expertise
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
-                        a(href="#").xtra-sm-link.thin-margin-top View Our Services
+                        p Our expert consultants have years of experience and are ready to make sure your organization is inspection-ready.
+                        a(href="expertise.html").xtra-sm-link.thin-margin-top View Our Services
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-3.png, small]").orange-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Recent Projects
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste rem, dolore eos deserunt minus commodi. Suscipit expedita excepturi explicabo voluptatem sit doloremque fugit
-                        a(href="#").xtra-sm-link.thin-margin-top Our Work
-        .bp-orange-cta
+                        p We have helped many clients over the years improve their culture of quality. Take a look at some of our most recent work to learn more.
+                        a(href="expertise.html").xtra-sm-link.thin-margin-top Our Work
+        #best-practices.bp-orange-cta
           .row.bg-cover(data-interchange="[images/orange-tube.jpg, small]")
             .columns.small-12.medium-9.medium-centered.xtra-thick-page-section
               .row
@@ -107,47 +107,47 @@ html(lang="en").no-js
                           .icon.icon-email
 
 
-
-        .form-container#contact
-          .row
-            .columns.small-11.small-centered.medium-9.large-8
-              .row
-                .columns.medium-4.large-5
-                  h2.header-1 Want To <br /> Learn More?
-                  span.header-3 Contact us today.
-                  hr.hr-1.thick-margin-bottom
-                  .thin-margin-bottom
-                    strong.header-2.no-margin John Osler
-                    span.header-3
-                      small Founder &amp; President
-                  ul.no-bullet.contact-list
-                    li
-                      a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
-                        i.icon.icon-phone
-                        span (585) 944-7046
-                    li
-                      a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
-                        i.icon.icon-email
-                        span josler@qualiceutics.com
-                .columns.medium-8.large-7
-                  //- OG form
-                  form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
-                    .alert.callout(data-abide-error, style='display: none;')
-                      span Please be sure to fill out all required fields
-                    input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
-                    .row
-                      .columns.medium-6
-                        input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
-                      .columns.medium-6
-                        input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
-                    textarea#message(name='message', required, placeholder="Compose Message")
-                    input#submit(type='submit', name='submit', value='Send').button-1.alt
-                  //- #success
-                    span
-                      p Your message was sent succssfully! I will be in touch as soon as I can.
-                  //- #error
-                    span
-                      p Something went wrong, try refreshing and submitting the form again.
+        .row
+          .form-container#contact
+            .row
+              .columns.small-11.small-centered.medium-9.large-8
+                .row
+                  .columns.medium-4.large-5
+                    h2.header-1 Want To <br /> Learn More?
+                    span.header-3 Contact us today.
+                    hr.hr-1.thick-margin-bottom
+                    .thin-margin-bottom
+                      strong.header-2.no-margin John Osler
+                      span.header-3
+                        small Founder &amp; President
+                    ul.no-bullet.contact-list
+                      li
+                        a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
+                          i.icon.icon-phone
+                          span (585) 944-7046
+                      li
+                        a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
+                          i.icon.icon-email
+                          span josler@qualiceutics.com
+                  .columns.medium-8.large-7
+                    //- OG form
+                    form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
+                      .alert.callout(data-abide-error, style='display: none;')
+                        span Please be sure to fill out all required fields
+                      input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
+                      .row
+                        .columns.medium-6
+                          input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
+                        .columns.medium-6
+                          input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
+                      textarea#message(name='message', required, placeholder="Compose Message")
+                      input#submit(type='submit', name='submit', value='Send').button-1.alt
+                    //- #success
+                      span
+                        p Your message was sent succssfully! I will be in touch as soon as I can.
+                    //- #error
+                      span
+                        p Something went wrong, try refreshing and submitting the form again.
 
 
       include inc/_footer.jade

@@ -1,0 +1,163 @@
+
+
+.lt-bot-border {
+    position: relative;
+    &:after {
+        position: relative;
+        display: block;
+        width: 85%;
+        height: 2px;
+        content: ' ';
+        margin: 0 auto;
+        top: rem-calc(30);
+        border-bottom: 1px solid $grey-light;
+        @include mq(medium) {
+            top: rem-calc(60);
+            width: 70%;
+        }
+    }
+}
+
+// Qual. process tabs
+.process-tabs {
+    .cir-number-list {
+        margin-left: rem-calc(35);
+        li {
+            padding: rem-calc(10 0);
+            a {
+                padding: 0 0;
+                margin-bottom: rem-calc(10);
+                font-size: rem-calc(20);
+                text-transform: uppercase;
+                color: $grey;
+                transition: all 0.25s ease;
+            }
+            &:before {
+                border-color: $grey;
+                top: 5px;
+                transition: all 0.25s ease;
+            }
+            &:hover {
+                a,
+                &:before {
+                    color: $grey-light-headers;
+                    border-color: $grey-light-headers;
+                }
+
+            }
+        }
+        @include mq(medium) {
+            li {
+                a {
+                    font-size: rem-calc(16);
+                }
+            }
+        }
+        li.is-active {
+            a,
+            &:before {
+                color: $grey-light-headers;
+                border-color: $grey-light-headers;
+            }
+        }
+    // end of cir-number-list
+    }
+
+    .tabs-content {
+        min-height: rem-calc(700);
+        .tabs-panel {
+            padding: rem-calc(70 20);
+
+            .pro-lead-in {
+                font-size: rem-calc(17);
+            }
+            .process-inner-lists {
+                color: $white;
+                li {
+                    p {
+                        font-weight: 500;
+                        margin-bottom: rem-calc(5);
+                    }
+                }
+            }
+        // end of tabs-panel
+        }
+        @include mq(medium) {
+            min-height: rem-calc(460);
+        }
+    // end of tabs-content
+    }
+    .top-indent {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '\25BE';
+            font-size: rem-calc(90);
+            color: $white;
+            top: -62px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+
+// end of process slider
+}
+
+
+// Accordion Styling
+
+.process-accord {
+    .accordion {
+        border: none;
+        .accordion-item {
+            border: 1px solid #dcdcdc;
+            margin: rem-calc(10 0);
+            .accordion-title {
+                background-color: rgba(245, 245, 245, 0.60);
+                font-size: rem-calc(18);
+                padding: rem-calc(32 16);
+                transition: all 0.25s ease;
+                &:hover {
+                    color: rgb(158, 158, 158);
+                }
+                &:before {
+                    content: "\64";
+                    font-family: "qua-icons" !important;
+                    transform: rotate(90deg);
+                    color: $orange;
+                    transition: all 0.25s ease;
+                }
+            }
+            .accordion-content {
+                p {
+                    font-size: rem-calc(15);
+                    font-weight: 400;
+                }
+                ul {
+                    margin: rem-calc(0 0 25 36);
+                    p {
+                        margin-bottom: rem-calc(6);
+                    }
+                }
+            }
+        }
+        .accordion-item.is-active {
+            .accordion-title {
+                background-color: $white;
+                border-bottom-color: rgba(230, 230, 230, 0);
+                color: $orange;
+                padding-bottom: rem-calc(10);
+            }
+        }
+        .is-active > .accordion-title::before {
+            color: $grey-light-headers;
+            transform: rotate(270deg);
+            right: 25px;
+            margin-top: 3px;
+        }
+    // end of accordion class
+    }
+// end of process-accord class
+}
+

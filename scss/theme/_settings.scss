@@ -186,9 +186,9 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: $white;;
 $accordion-plusminus: true;
-$accordion-item-color: foreground($accordion-background, $primary-color);
+$accordion-item-color: $grey;
 $accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
@@ -200,7 +200,7 @@ $accordion-content-padding: 1rem;
 // -----------------
 
 $accordionmenu-arrows: true;
-$accordionmenu-arrow-color: $primary-color;
+$accordionmenu-arrow-color: $orange;
 
 // 9. Badge
 // --------
@@ -491,18 +491,18 @@ $show-header-for-stacked: false;
 // 31. Tabs
 // --------
 
-$tab-margin: 0;
+$tab-margin: 1rem;
 $tab-background: $white;
-$tab-background-active: $light-gray;
-$tab-border: $light-gray;
-$tab-item-color: foreground($tab-background, $primary-color);
+$tab-background-active: $white;
+$tab-border: none;
+$tab-item-color: $grey;
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
-$tab-content-color: foreground($tab-background, $primary-color);
-$tab-content-padding: 1rem;
+$tab-content-border: none;
+$tab-content-color: $white;
+$tab-content-padding: 2rem;
 
 // 32. Thumbnail
 // -------------
