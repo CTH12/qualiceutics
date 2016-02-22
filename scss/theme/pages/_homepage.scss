@@ -17,18 +17,43 @@
     padding: rem-calc(20 32 32 0); /* 2rem = (16px * 2) */
 }
 
-.best-practices-cta{
+.best-practices-cta,
+.bp-pagination {
     list-style-type: none;
-    margin-left: rem-calc(20);
+    margin: 0px 0px;
     li {
         display: inline-block;
-        padding: rem-calc(0 8);
+    }
+}
+
+#best-practices {
+    .tabs-panel {
+        padding: 0px 0px;
+    }
+}
+
+.best-practices-cta {
+
+    li:first-child {
+        padding-left: 0px;
+    }
+    li {
+        padding: rem-calc(0 5);
         a {
             color: $grey;
-            transition: all 0.25s ease;
+            transition: all 0.25s ease-out;
             &:hover {
                 color: $grey-dark;
             }
+        }
+        &:before {
+            font-size: rem-calc(18);
+        }
+    }
+    .icon-download {
+        &:before {
+            font-size: rem-calc(24);
+            padding-right: rem-calc(6);
         }
     }
     li.divider {
@@ -37,17 +62,18 @@
             content: ' ';
             height: 20px;
             width: 1px;
-            background-color: $grey;
+            background-color: $grey-light;
             position: relative;
             top: 5px;
             display: inline-block;
         }
     }
     .icon-linkedin,
-    .icon-email {
+    .icon-email,
+    .icon-facebook {
         &:before {
-            position: relative;
-            top: -1px;
+            // position: relative;
+            // top: -1px;
             color: $grey;
             transition: all 0.25s ease;
         }
@@ -56,5 +82,61 @@
                 color: $grey-dark;
             }
         }
+    }
+// end of best practices cta
+}
+
+ul.bp-pagination {
+    float: right;
+    position: relative;
+    bottom: rem-calc(31);
+    a {
+        color: $grey-light;
+        font-size: rem-calc(15);
+        padding: rem-calc(0 5);
+        transition: all 0.25s ease;
+        &:before {
+            vertical-align: bottom;
+        }
+        &:hover {
+            color: $grey;
+        }
+    }
+    .prev-bp {
+        &:before {
+            position: relative;
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    }
+
+// end of bp-pagination
+}
+
+.news-cta {
+    .header-icon {
+        &:before {
+            bottom: 0;
+        }
+    }
+    .xtra-sm-link {
+        color: $grey;
+        font-size: rem-calc(14);
+        &:before {
+            color: $grey;
+            top: 2px;
+        }
+        &:hover {
+            color: $grey-light;
+            &:before {
+                color: $grey-light;
+            }
+        }
+    }
+}
+
+@media #{$small-only} {
+    .small-only-margin {
+        margin: rem-calc(30 auto);
     }
 }

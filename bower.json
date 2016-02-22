@@ -20,6 +20,7 @@
     "konami-js": "*",
     "clipboard": "~1.5.5",
     "motion-ui": "~1.1.1",
-    "hover": "^2.0.2"
+    "hover": "^2.0.2",
+    "jssocials": "^1.1.0"
   }
 }

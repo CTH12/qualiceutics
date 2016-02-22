@@ -24,7 +24,8 @@
 
 
 $lg-top-vert: 26%;
-$sm-top-vert: 12%;
+$med-top-vert: 23%;
+$sm-top-vert: 14%;
 
 .valign-center {
   transform: translateY($sm-top-vert);
@@ -34,13 +35,20 @@ $sm-top-vert: 12%;
   position: relative;
 }
 
+@include mq(medium) {
+    .valign-center {
+      transform: translateY($med-top-vert);
+      -webkit-transform: translateY($med-top-vert);
+      -o-transform:translateY($med-top-vert);
+      -ms-transform:translateY($med-top-vert);
+    }
+}
 @include mq(large) {
     .valign-center {
       transform: translateY($lg-top-vert);
       -webkit-transform: translateY($lg-top-vert);
       -o-transform:translateY($lg-top-vert);
       -ms-transform:translateY($lg-top-vert);
-      position: relative;
     }
 }
 
