@@ -128,7 +128,7 @@
 
 
 .form-container {
-  @include page-section(rem-calc(40));
+  @include page-section(rem-calc(30));
   background-color: $grey-light;
   .hr-1 {
     border-bottom-color: $grey;
@@ -139,7 +139,7 @@
     @include page-section(rem-calc(80));
   }
   @include mq(large) {
-    padding-top: rem-calc(140);
+    padding-top: rem-calc(100);
   }
 }
 

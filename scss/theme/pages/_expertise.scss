@@ -126,7 +126,7 @@
                 }
                 &:after {
                     font-family: "qua-icons" !important;
-                    content: "\64";
+                    content: "b";
                     transform: rotate(90deg);
                     color: $orange;
                     transition: all 0.25s ease;
@@ -139,7 +139,7 @@
                     position: relative;
                     display: inline-block;
                     padding-right: rem-calc(10);
-                    bottom: rem-calc(7);
+                    bottom: rem-calc(1);
                     font-size: rem-calc(25);
                     color: $orange;
                 }
@@ -169,7 +169,6 @@
         .is-active > .accordion-title::after {
             color: $grey-light-headers;
             transform: rotate(270deg);
-            right: 25px;
             margin-top: 3px;
         }
     // end of accordion class

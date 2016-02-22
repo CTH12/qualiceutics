@@ -46,34 +46,13 @@
 .caps                               {text-transform: uppercase;}
 .thin                               {font-weight: 400;}
 .tagline                            {margin-bottom: rem-calc(2);}
-
-
+.bold                               {font-weight: 500;}
+p                                   {font-weight: 400;}
+.tiny                               {font-size: rem-calc(14);}
 // Links
 
-.xtra-sm-link {
-    font-size: rem-calc(15);
-    font-weight: 500;
-    position: relative;
-    text-transform: uppercase;
-    color: $grey-lk-light;
-    transition: all 0.3s ease-out;
-    &:after {
-        content: '\2192';
-        position: relative;
-        right: -15px;
-        top: 0px;
-        font-size: rem-calc(20);
-        color: $grey-lk-light;
-        transition: all 0.3s ease-out;
-    }
-    &:hover {
-        color: $grey;
-        &:after {
 
-            right: -20px;
-        }
-    }
-}
+
 
 .tiny-link {
     font-size: rem-calc(12);

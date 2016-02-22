@@ -5,6 +5,7 @@
     @include page-section(rem-calc(30));
     .footer-links {
       list-style-type: none;
+      margin-left: 0px;
       li {
         display: block;
         padding: rem-calc(10 0);
@@ -21,8 +22,6 @@
     }
     .contact-footer {
       a {
-        clear: left;
-        float: none;
         text-align: center;
         display: block;
       }
@@ -37,8 +36,7 @@
       }
       .contact-footer {
         a {
-          clear: left;
-          float: left;
+            text-align: right;
         }
       }
     }
@@ -50,23 +48,13 @@
     background-color: $grey-dark;
     text-align: center;
     color: $grey-light;
-    text-transform: uppercase;
+
     font-size: rem-calc(18);
     p {
       margin-bottom: 0;
       line-height: 1;
     }
     a {
-      &:before {
-        content: "\0a0";
-        display: inline-block;
-        width: 1px;
-        height: rem-calc(32);
-        opacity: 0.3;
-        background-color: $grey-light;
-        margin-right: rem-calc(20);
-        vertical-align: middle;
-      }
       color: inherit;
       margin-left: rem-calc(20);
     }
@@ -74,6 +62,11 @@
       font-size: rem-calc(20);
       position: relative;
       bottom: rem-calc(-3);
+      &:hover {
+        &:before {
+            color: $orange;
+        }
+      }
     }
 
     .footer-brand {

@@ -43,6 +43,8 @@
 
 
 
+
+
       /**
        * smooth scroll to a section of the page
        * @return {N/A}
@@ -187,6 +189,10 @@
             }, 500);
 
       });
+      // var orbit = new Foundation.Orbit($('#orbit-1'), {
+      //       timerDelay: 7500
+
+      //  });
 
 
 
@@ -203,7 +209,6 @@
   $(document).ready(function () {
 
     $(document).foundation();
-
 
 
 

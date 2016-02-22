@@ -14,7 +14,7 @@ html(lang="en").no-js
 
       main#main
         .hero
-          .orbit(data-orbit role="region" data-options="autoPlay:false; swipe:true;")
+          #orbit-1.orbit(data-orbit role="region" data-options="timerDelay:7500;")
             ul.orbit-container
               button.orbit-previous(aria-label='previous')
                 span.show-for-sr Previous Slide
@@ -24,130 +24,165 @@ html(lang="en").no-js
                 | &#9654;
               li.is-active.orbit-slide.bg-cover(data-interchange="[images/hp-slide1.jpg, small]")
                 .row
-                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
+                  .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
                       h1.header-1.white.thin-margin-bottom Do you have quality systems in place?
                       hr.hr-orange
                       p.header-3.white Let QualiCeutics improve your quality &amp; compliance culture.
-                      a(href="#").button.orange-outline Learn More &#8594;
+                      a(href="expertise.html").button.orange-outline Learn More &#8594;
               li.orbit-slide.bg-cover(data-interchange="[images/hp-slide2.jpg, small]")
                 .row
-                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
+                  .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
                       h1.header-1.white.thin-margin-bottom Are you ready for an audit?
                       hr.hr-orange
                       p.header-3.white We work to make sure our clients create, modify and maintain controlled data.
-                      a(href="#").button.orange-outline Learn More &#8594;
+                      a(href="expertise.html").button.orange-outline Learn More &#8594;
               li.orbit-slide.bg-cover(data-interchange="[images/hp-slide3.jpg, small]")
                 .row
-                  .columns.small-11.small-centered.medium-7.medium-uncenter.medium-offset-4.large-5.large-offset-6.valign-center
+                  .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
                       h1.header-1.white.thin-margin-bottom Are you operating up to code?
                       hr.hr-orange
                       p.header-3.white With help from QualiCeutics, you can be inspection and submission ready.
-                      a(href="#").button.orange-outline Learn More &#8594;
+                      a(href="#best-practices" data-smooth-scroll).button.orange-outline Learn More &#8594;
 
-        .content
+        .xtra-thick-page-section
           .row
             .columns.small-11.small-centered.medium-8.text-center
-              h2.header-1.orange.thick-page-section Let's build a culture of quality
-              p Consultants at the QualiCeutics Group work to improve the quality and compliance environment of pharmaceutical clients by linking them to industry best practice.  We create strong partnerships and work diligently to help integrate and embed the new quality processes and systems into the whole organization
+              h2.header-1.orange.margin-bottom Let's build a culture of quality
+              p.bold Consultants at the QualiCeutics Group work to improve the quality and compliance environment of pharmaceutical clients by linking them to industry best practice.  We create strong partnerships and work diligently to help integrate and embed the new quality processes and systems into the whole organization
 
         .lead-in
           .row.grey-bg
             .columns.small-12.medium-10.medium-centered
-              .row.small-up-1.medium-up-2.large-up-3.xtra-thick-page-section
+              .row.small-up-1.medium-up-2.large-up-3.xtra-thick-page-section(data-equalizer)
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-1.png, small]").grey-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Who We Are
-                        p The QualiCeutics Group is a consulting firm that works with clients in the pharma and biotech industries.
-                        a(href="about-us.html").xtra-sm-link.thin-margin-top Consultant Profiles
+                        p(data-equalizer-watch) The QualiCeutics Group is a consulting firm that works with clients in the pharma and biotech industries.
+                        a(href="about-us.html").xtra-sm-link.icon-arrow-right.thin-margin-top Consultant Profiles
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-2.png, small]").blue-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Our Expertise
-                        p Our expert consultants have years of experience and are ready to make sure your organization is inspection-ready.
-                        a(href="expertise.html").xtra-sm-link.thin-margin-top View Our Services
+                        p(data-equalizer-watch) Our expert consultants have years of experience and are ready to make sure your organization is inspection-ready.
+                        a(href="expertise.html").xtra-sm-link.icon-arrow-right.thin-margin-top View Our Services
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-3.png, small]").orange-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Recent Projects
-                        p We have helped many clients over the years improve their culture of quality. Take a look at some of our most recent work to learn more.
-                        a(href="expertise.html").xtra-sm-link.thin-margin-top Our Work
+                        p(data-equalizer-watch) We have helped many clients over the years improve their culture of quality. Take a look at some of our most recent work to learn more.
+                        a(href="expertise.html").xtra-sm-link.icon-arrow-right.thin-margin-top Our Work
         #best-practices.bp-orange-cta
           .row.bg-cover(data-interchange="[images/orange-tube.jpg, small]")
-            .columns.small-12.medium-9.medium-centered.xtra-thick-page-section
+            .columns.small-12.medium-11.medium-centered.large-9.xtra-thick-page-section
               .row
                 .columns.medium-12.small-12
-                  h2.header-2.white.bp-prev-icon Best Practices
+                  h2.header-2.white.icon-ribbon.header-icon Best Practices
               .row
                 .columns.medium-6.small-12
                   .callout.transparent-bg
-                    p.white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, fugit explicabo. Veritatis aut voluptate aperiam quibusdam laboriosam, autem vitae. Natus, sequi. Velit necessitatibus ut, sunt cum reiciendis non, voluptates ratione! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    p.white At QualiCeutics, we are dedicated to ensuring you are implementing the Best Practices possible. Be inspection- and submission-ready, and read some of our most recent work to learn how you can partner with us to improve the quality and compliance culture at your organization.
                 .columns.medium-6.small-12
                   .callout.white-bg
-                    p.header-3.thin Good Documentation Practices in the Quality Control Laboratory
-                    ul.best-practices-cta.thin-margin-top
-                      li
-                        a(href="#").dl-prev-icon
-                          p.tiny-link.caps Download
-                      li.divider
-                      li
-                        a(href="#")
-                          .icon.icon-linkedin.grey
-                      li
-                        a(href="#")
-                          .icon.icon-email
+                    .tabs-content(data-tabs-content="bp-cta")
+                      #bp-doc.tabs-panel.is-active
+                        p.header-3.thin Good Documentation Practices in the Quality Control Laboratory
+                        ul.best-practices-cta.thin-margin-top
+                          li
+                            a(href="pdf/Best_practice-GDPs_for_QC_Laboratories.pdf" target="_blank").icon-download.tiny-link.caps Download
+                          li.divider
+                          li
+                            a(href="#").icon-facebook
+                          li
+                            a(href="#").icon-linkedin
+                          li
+                            a(href="#").icon-email
+                        #share
+                      #bp-doc2.tabs-panel
+                        p.header-3.thin Practice in the Quality Control Laboratory
+                        ul.best-practices-cta.thin-margin-top
+                          li
+                            a(href="pdf/Best_practice-GDPs_for_QC_Laboratories.pdf" target="_blank").icon-download.tiny-link.caps Download
+                          li.divider
+                          li
+                            a(href="#").icon-facebook
+                          li
+                            a(href="#").icon-linkedin
+                          li
+                            a(href="#").icon-email
 
+                    //- ul.bp-pagination.thin-margin-top(data-tabs id="bp-cta")
+                      li.is-active.tabs-title
+                        a(href="#bp-doc" aria-selected="true").icon-arrow-right-2.prev-bp
+                      li.tabs-title
+                        a(href="#bp-doc2" aria-selected="true").icon-arrow-right-2.next-bp
+        .news-cta.thick-page-section
+          .row
+            .columns.small-12.medium-11.medium-centered.large-9.xtra-thick-page-section
+              .row.thin-margin-bottom
+                .columns.medium-12.small-12
+                  h2.header-2.icon-calendar.orange-icon.header-icon Recent News
+              .row
+                .columns.small-12.medium-6.small-only-margin
+                  p.tiny.caps.bold.no-margin-bottom.grey-light-headers December 2015
+                  p QualiCeutics sponsors Africa Pharma Summit East 2016, February 23-25 in Nairobi, Kenya.
+                  a(href="qualiceutics_sponsors_africa_pharma_summit.html").xtra-sm-link.icon-arrow-right Read More
+                .columns.small-12.medium-6.small-only-margin
+                  p.tiny.caps.bold.no-margin-bottom.grey-light-headers February 2016
+                  p QualiCeutics to present at Africa Pharma Summit East 2016, February 23-25 in Nairobi, Kenya
+                  a(href="john-osler-presents-at-Africa-Pharma-Summit.html").xtra-sm-link.icon-arrow-right Read More
 
-        .row
-          .form-container#contact
-            .row
-              .columns.small-11.small-centered.medium-9.large-8
-                .row
-                  .columns.medium-4.large-5
-                    h2.header-1 Want To <br /> Learn More?
-                    span.header-3 Contact us today.
-                    hr.hr-1.thick-margin-bottom
-                    .thin-margin-bottom
-                      strong.header-2.no-margin John Osler
-                      span.header-3
-                        small Founder &amp; President
-                    ul.no-bullet.contact-list
-                      li
-                        a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
-                          i.icon.icon-phone
-                          span (585) 944-7046
-                      li
-                        a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
-                          i.icon.icon-email
-                          span josler@qualiceutics.com
-                  .columns.medium-8.large-7
-                    //- OG form
-                    form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
-                      .alert.callout(data-abide-error, style='display: none;')
-                        span Please be sure to fill out all required fields
-                      input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
-                      .row
-                        .columns.medium-6
-                          input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
-                        .columns.medium-6
-                          input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
-                      textarea#message(name='message', required, placeholder="Compose Message")
-                      input#submit(type='submit', name='submit', value='Send').button-1.alt
-                    //- #success
-                      span
-                        p Your message was sent succssfully! I will be in touch as soon as I can.
-                    //- #error
-                      span
-                        p Something went wrong, try refreshing and submitting the form again.
+        .grey-light-bg
+          .row
+            .form-container#contact
+              .row
+                .columns.small-11.small-centered.medium-9.large-8
+                  .row
+                    .columns.medium-4.large-5
+                      h2.header-1 Want To <br /> Learn More?
+                      span.header-3 Contact us today.
+                      hr.hr-1.thick-margin-bottom
+                      .thin-margin-bottom
+                        strong.header-2.no-margin John Osler
+                        span.header-3
+                          small Founder &amp; President
+                      ul.no-bullet.contact-list
+                        li
+                          a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
+                            i.icon.icon-phone
+                            span (585) 944-7046
+                        li
+                          a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
+                            i.icon.icon-email
+                            span josler@qualiceutics.com
+                    .columns.medium-8.large-7
+                      //- OG form
+                      form#contact.contact-form(name='contact', method='post', data-abide, novalidate)
+                        .alert.callout(data-abide-error, style='display: none;')
+                          span Please be sure to fill out all required fields
+                        input#name(type='text', name='name', size='30', value='', required, placeholder="Name or Company Name")
+                        .row
+                          .columns.medium-6
+                            input#email(type='text', name='email', size='30', value='', required, placeholder="Email")
+                          .columns.medium-6
+                            input#phone(type='text', name='phone', size='30', value='', required, placeholder="Phone")
+                        textarea#message(name='message', required, placeholder="Compose Message")
+                        input#submit(type='submit', name='submit', value='Send').button-1.alt
+                      //- #success
+                        span
+                          p Your message was sent succssfully! I will be in touch as soon as I can.
+                      //- #error
+                        span
+                          p Something went wrong, try refreshing and submitting the form again.
 
 
       include inc/_footer.jade

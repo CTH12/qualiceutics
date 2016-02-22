@@ -1,16 +1,28 @@
 
 
+// Correct janky body movement when reveal is open
+body.is-reveal-open {
+    overflow: visible;
+}
+.reveal-overlay {
+    overflow-y: hidden;
+}
+
+
+
+
 .cir-number-list {
     list-style-type: none;
-    counter-reset: li;
+    // counter-reset: li;
     margin-left: rem-calc(36);
     li {
         position: relative;
-        counter-increment: li;
+        // counter-increment: li;
         &:before {
-            content: counter(li);
-            border-radius: 50%;
-            border: solid 1px $white;
+            // content: counter(li);
+            // border-radius: 50%;
+            // border: solid 1px $white;
+            font-size: rem-calc(27);
             text-align: center;
             position: absolute;
             left: - rem-calc(35);
@@ -67,6 +79,7 @@
 .assoc-box {
   .orange-bot-border                                      {border-bottom: solid 6px $orange;}
   .associate-bio {
+    p                                                     {font-weight:400;}
     .tagline                                              {margin-bottom: -2px;}
     .xtra-sm-link {
       color: $grey;
@@ -76,9 +89,12 @@
     }
     .assoc-title{
       font-size: rem-calc(15);
+      font-weight: 500;
     }
   }
 }
+
+
 
 
 @media #{$small-only} {
