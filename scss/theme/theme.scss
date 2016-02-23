@@ -34,7 +34,7 @@
   width: 100%;
   margin-top: 1px !important;
   @include mq(medium) {
-    @include page-section(rem-calc(38));
+    @include page-section(rem-calc(24));
     background-image: url(../images/left-hexagons.png),
                       url(../images/right-hexagons.png);
     background-position: bottom left,

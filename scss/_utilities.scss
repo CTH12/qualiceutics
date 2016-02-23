@@ -175,6 +175,9 @@ $foundation_colors: (
   .medium-no-margin-left             { margin-left: 0 !important; }
   .medium-no-margin-right            { margin-right: 0 !important; }
 }
+@include mq(large) {
+    .large-margin-bottom {margin-bottom: $column-gutter * 1 !important; }
+}
 
 
 
