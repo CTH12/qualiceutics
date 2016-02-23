@@ -93,7 +93,18 @@ body.is-reveal-open {
     }
   }
 }
+@media #{$medium-up} {
+    .reveal {
+        .associate-bio {
+            float: left;
+            padding-right: rem-calc(40);
+            min-width: rem-calc(350);
+        }
+    }
 
+
+// end of medium query
+}
 
 
 

@@ -187,6 +187,11 @@
       //       timerDelay: 7500
 
       //  });
+      // $('[data-orbit]').on('slidechange.zf.orbit', function() {
+      //   console.log('I changed slides!');
+      //       $('.orbit-slide').removeClass('bg-cover');
+      //       $('.orbit-slide').addClass('increase-bg');
+      //   });
 
 
 

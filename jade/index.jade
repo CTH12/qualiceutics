@@ -15,57 +15,57 @@ html(lang="en").no-js
 
       main#main
         .hero
-          #orbit-1.orbit(data-orbit role="region" data-options="timerDelay:7500;")
+          #orbit-1.orbit(data-orbit role="region" data-options="timerDelay:7500; navButtons:false; autoPlay:true;")
             ul.orbit-container
-              button.orbit-previous(aria-label='previous')
-                span.show-for-sr Previous Slide
-                | &#9664;
-              button.orbit-next(aria-label='next')
-                span.show-for-sr Next Slide
-                | &#9654;
-              li.is-active.orbit-slide.bg-cover(data-interchange="[images/hp-slide1.jpg, small]")
+              //- button.orbit-previous(aria-label='previous')
+              //-   span.show-for-sr Previous Slide
+              //-   | &#9664;
+              //- button.orbit-next(aria-label='next')
+              //-   span.show-for-sr Next Slide
+              //-   | &#9654;
+              li.is-active.orbit-slide.slide-1
                 .row
                   .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
-                      h1.header-1.white.thin-margin-bottom Do you have quality systems in place?
+                      h1.header-1.white.thin-margin-bottom Are your Quality Systems compliant?
                       hr.hr-orange
                       p.header-3.white Let QualiCeutics improve your quality &amp; compliance culture.
-                      a(href="expertise.html").button.orange-outline Learn More &#8594;
-              li.orbit-slide.bg-cover(data-interchange="[images/hp-slide2.jpg, small]")
+                      a(href="expertise.html#areas-exp").button.orange-outline.right-arrow Learn More
+              li.orbit-slide.slide-2
                 .row
                   .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
                       h1.header-1.white.thin-margin-bottom Are you ready for an audit?
                       hr.hr-orange
                       p.header-3.white We work to make sure our clients create, modify and maintain controlled data.
-                      a(href="expertise.html").button.orange-outline Learn More &#8594;
-              li.orbit-slide.bg-cover(data-interchange="[images/hp-slide3.jpg, small]")
+                      a(href="expertise.html#qual-pro").button.orange-outline.right-arrow Learn More
+              li.orbit-slide.slide-3
                 .row
                   .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
                     .callout
                       h1.header-1.white.thin-margin-bottom Are you operating up to code?
                       hr.hr-orange
                       p.header-3.white With help from QualiCeutics, you can be inspection and submission ready.
-                      a(href="#best-practices" data-smooth-scroll).button.orange-outline Learn More &#8594;
+                      a(href="#best-practices" data-smooth-scroll).button.orange-outline.right-arrow Learn More
 
         .xtra-thick-page-section
           .row
-            .columns.small-11.small-centered.medium-8.text-center
+            .columns.small-11.small-centered.medium-9.text-center
               h2.header-1.orange.margin-bottom Let's build a culture of quality
-              p.bold Consultants at the QualiCeutics Group work to improve the quality and compliance environment of pharmaceutical clients by linking them to industry best practice.  We create strong partnerships and work diligently to help integrate and embed the new quality processes and systems into the whole organization
+              p.bold Consultants at The QualiCeutics Group work to improve the quality and compliance environment of pharmaceutical clients by linking them to industry best practice.  We create strong partnerships and work diligently to help integrate and embed the new quality processes and systems into the whole organization
 
         .lead-in
           .row.grey-bg
             .columns.small-12.medium-10.medium-centered
               .row.small-up-1.medium-up-2.large-up-3.xtra-thick-page-section(data-equalizer)
                 .column.hp-block-grid
-                  .top-small-img(data-interchange="[images/leadin-1.png, small]").grey-overlay
+                  .top-small-img(data-interchange="[images/lead-in-01.jpg, small]").grey-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
                         h3.header-2.blue.thin-margin-bottom Who We Are
                         p(data-equalizer-watch) The QualiCeutics Group is a consulting firm that works with clients in the pharma and biotech industries.
-                        a(href="about-us.html").xtra-sm-link.icon-arrow-right.thin-margin-top Consultant Profiles
+                        a(href="about-us.html#consults").xtra-sm-link.icon-arrow-right.thin-margin-top Consultant Profiles
                 .column.hp-block-grid
                   .top-small-img(data-interchange="[images/leadin-2.png, small]").blue-overlay
                   .white-bg.thin-page-section
@@ -75,7 +75,7 @@ html(lang="en").no-js
                         p(data-equalizer-watch) Our expert consultants have years of experience and are ready to make sure your organization is inspection-ready.
                         a(href="expertise.html").xtra-sm-link.icon-arrow-right.thin-margin-top View Our Services
                 .column.hp-block-grid
-                  .top-small-img(data-interchange="[images/leadin-3.png, small]").orange-overlay
+                  .top-small-img(data-interchange="[images/lead-in-03.jpg, small]").orange-overlay
                   .white-bg.thin-page-section
                     .row
                       .columns.small-11.small-centered
@@ -157,9 +157,9 @@ html(lang="en").no-js
                           small Founder &amp; President
                       ul.no-bullet.contact-list
                         li
-                          a(href="tel:585944-7046" title="Phone Number" alt="Phone Number").grey
+                          a(href="tel:15859447046" title="Phone Number" alt="Phone Number").grey
                             i.icon.icon-phone
-                            span (585) 944-7046
+                            span +1 (585) 944-7046
                         li
                           a(href="mailto:josler@qualiceutics.com" alt="email" title="email").grey
                             i.icon.icon-email
