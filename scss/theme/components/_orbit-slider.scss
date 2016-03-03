@@ -127,7 +127,7 @@ $sm-top-vert: 14%;
     }
 }
 
-@include mq(small-only) {
+@media #{$small-only} {
     .orbit-previous,
     .orbit-next                         {display:none;}
 }
