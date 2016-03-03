@@ -15,14 +15,14 @@ html(lang="en").no-js
 
       main#main
         .hero
-          #orbit-1.orbit(data-orbit role="region" data-options="timerDelay:7800; autoPlay:true;")
+          #orbit-1.orbit(data-orbit role="region" data-options="timerDelay:5200; autoPlay:true;")
             ul.orbit-container
-              //- button.orbit-previous(aria-label='previous')
-              //-   span.show-for-sr Previous Slide
-              //-   | &#9664;
-              //- button.orbit-next(aria-label='next')
-              //-   span.show-for-sr Next Slide
-              //-   | &#9654;
+              button.orbit-previous(aria-label='previous')
+                span.show-for-sr Previous Slide
+                | &#9664;
+              button.orbit-next(aria-label='next')
+                span.show-for-sr Next Slide
+                | &#9654;
               li.is-active.orbit-slide.slide-1
                 .row
                   .columns.small-11.small-centered.medium-10.large-uncenter.large-5.large-offset-6.valign-center
