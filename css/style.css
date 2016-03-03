@@ -3115,7 +3115,7 @@ body {
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
     outline: 0; }
   .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
-    background-color: rgba(10, 10, 10, 0.35); }
+    background-color: rgba(10, 10, 10, 0); }
 
 .orbit-previous {
   left: 0; }
@@ -9199,8 +9199,24 @@ p {
   .orbit ul.orbit-container .orbit-previous,
   .orbit ul.orbit-container .orbit-next {
     top: 50%; }
+    .orbit ul.orbit-container .orbit-previous:after,
+    .orbit ul.orbit-container .orbit-next:after {
+      font-family: "qua-icons" !important;
+      content: "\62";
+      top: 0.125rem;
+      font-size: 1.0625rem;
+      left: 0.3125rem;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.45);
+      transition: all 0.25s ease; }
+    .orbit ul.orbit-container .orbit-previous:hover:after,
+    .orbit ul.orbit-container .orbit-next:hover:after {
+      color: #f7a115; }
   .orbit ul.orbit-container .orbit-previous {
     left: 3%; }
+    .orbit ul.orbit-container .orbit-previous:after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .orbit ul.orbit-container .orbit-next {
     right: 3%; }
   .orbit ul.orbit-container .orbit-slide {

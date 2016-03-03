@@ -5,9 +5,37 @@
         outline: none;
 
         .orbit-previous,
-        .orbit-next                         {top:50%;}
-        .orbit-previous                     {left:3%;}
-        .orbit-next                         {right:3%;}
+        .orbit-next {
+            top:50%;
+            &:after {
+                font-family: "qua-icons" !important;
+                content: "\62";
+                top: rem-calc(2);
+                font-size: rem-calc(17);
+                left: rem-calc(5);
+                display: inline-block;
+                color: rgba(255, 255, 255, 0.45);
+                transition: all 0.25s ease;
+            }
+            &:hover {
+                &:after {
+                    color: rgba(247, 161, 21, 1.0);
+                }
+            }
+        }
+        .orbit-previous {
+            left:3%;
+            &:after {
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+        .orbit-next {
+            right:3%;
+        }
         .orbit-slide {
             min-height: rem-calc(500);
             position: relative;
