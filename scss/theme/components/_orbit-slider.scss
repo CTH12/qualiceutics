@@ -46,6 +46,9 @@
             .callout {
                 background-color: transparent;
                 // transform: translateY(26%);
+                @media #{$small-only} {
+                    padding: rem-calc(40 15);
+                }
                 .button {
                     margin-top: rem-calc(15);
                 }
@@ -118,9 +121,31 @@
           }
         }
 
+        @media only screen and (max-width: 350px) {
+            .slide-1,
+            .slide-2,
+            .slide-3 {
+                .valign-center {
+                  transform: translateY(5%);
+                  -webkit-transform: translateY(5%);
+                  -o-transform:translateY(5%);
+                  -ms-transform:translateY(5%);
+                  position: relative;
+                }
+                .callout {
+                    padding: rem-calc(30 5);
+                    .header-1               {font-size: rem-calc(27);}
+                    .header-3               {font-size: rem-calc(18);}
+                }
+            }
 
-// end of orbit container
+        // end of query
+        }
+
+    // end of orbit container
     }
+
+// end of orbit class
 }
 
 
@@ -138,12 +163,31 @@ $sm-top-vert: 14%;
   position: relative;
 }
 
+.slide-2 {
+    .valign-center {
+      transform: translateY(12%);
+      -webkit-transform: translateY(12%);
+      -o-transform:translateY(12%);
+      -ms-transform:translateY(12%);
+      position: relative;
+    }
+}
+
 @include mq(medium) {
     .valign-center {
       transform: translateY($med-top-vert);
       -webkit-transform: translateY($med-top-vert);
       -o-transform:translateY($med-top-vert);
       -ms-transform:translateY($med-top-vert);
+    }
+    .slide-1,
+    .slide-2 {
+        .valign-center {
+            transform: translateY(14%);
+            -webkit-transform: translateY(14%);
+            -o-transform:translateY(14%);
+            -ms-transform:translateY(14%);
+        }
     }
 }
 @include mq(large) {
@@ -154,6 +198,8 @@ $sm-top-vert: 14%;
       -ms-transform:translateY($lg-top-vert);
     }
 }
+
+
 
 @media #{$small-only} {
     .orbit-previous,

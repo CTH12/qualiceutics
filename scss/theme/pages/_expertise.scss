@@ -40,8 +40,8 @@
             &:hover {
                 a,
                 &:before {
-                    color: $grey-light-headers;
-                    border-color: $grey-light-headers;
+                    color: $orange;
+                    border-color: $orange;
                 }
 
             }
@@ -56,8 +56,8 @@
         li.is-active {
             a,
             &:before {
-                color: $grey-light-headers;
-                border-color: $grey-light-headers;
+                color: $orange;
+                border-color: $orange;
             }
         }
     // end of cir-number-list
@@ -119,9 +119,9 @@
                 padding: rem-calc(32 16);
                 transition: all 0.25s ease;
                 &:hover {
-                    color: rgb(158, 158, 158);
+                    color: $orange;
                     &:after {
-                        color: rgb(158, 158, 158);
+                        color: $orange;
                     }
                 }
                 &:after {
@@ -167,7 +167,7 @@
             }
         }
         .is-active > .accordion-title::after {
-            color: $grey-light-headers;
+            color: $orange;
             transform: rotate(270deg);
             margin-top: 3px;
         }
