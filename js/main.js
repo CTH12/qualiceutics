@@ -150,7 +150,7 @@
 
       // contact form setup
       // ----------------------------------------
-      var $contactForm = $('#contact-form');
+      var $contactForm = $('#conform');
       $contactForm.on('submit', function (event) {
         event.preventDefault();
         // the actual submission
