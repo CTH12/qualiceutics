@@ -150,9 +150,29 @@
 
       // contact form setup
       // ----------------------------------------
-      var $contactForm = $('#conform');
+      // var $contactForm = $('#conform');
+      // $contactForm.on('submit', function (event) {
+      //   event.preventDefault();
+      //   // the actual submission
+      //   $.ajax({
+      //     url: 'process.php',
+      //     type: 'post',
+      //     data: $contactForm.serialize(),
+      //     success: function () {
+      //       $contactForm.find('input[type=text], textarea').val('');
+      //       alert('Thank you! We\'ll get in touch soon');
+      //     },
+      //     error: function () {
+      //       alert('Sorry, looks like something went wrong');
+      //     }
+      //   });
+      // });
+      var $contactForm = $('#contact-form');
+      console.log($contactForm);
       $contactForm.on('submit', function (event) {
         event.preventDefault();
+      console.log("test");
+            console.log($contactForm.serialize());
         // the actual submission
         $.ajax({
           url: 'process.php',
