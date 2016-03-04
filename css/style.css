@@ -1,3 +1,9 @@
+/*!
+ * qualiceutics v0.1.0 (http://archercom.com/)
+ * Copyright 2014-2016 Archer Communications [luis rosario //zapo]
+ * Licensed under MIT (https://github.com/archercom/arrowhead/blob/master/LICENSE)
+ */
+
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
@@ -9219,6 +9225,9 @@ p {
     background-repeat: no-repeat; }
     .orbit ul.orbit-container .orbit-slide .callout {
       background-color: transparent; }
+      @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+        .orbit ul.orbit-container .orbit-slide .callout {
+          padding: 2.5rem 0.9375rem; } }
       .orbit ul.orbit-container .orbit-slide .callout .button {
         margin-top: 0.9375rem; }
     .orbit ul.orbit-container .orbit-slide .right-arrow:after {
@@ -9283,6 +9292,27 @@ p {
   100% {
     -webkit-transform: scale(1.25);
             transform: scale(1.25); } }
+  @media only screen and (max-width: 350px) {
+    .orbit ul.orbit-container .slide-1 .valign-center,
+    .orbit ul.orbit-container .slide-2 .valign-center,
+    .orbit ul.orbit-container .slide-3 .valign-center {
+      transform: translateY(5%);
+      -webkit-transform: translateY(5%);
+      -o-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+      position: relative; }
+    .orbit ul.orbit-container .slide-1 .callout,
+    .orbit ul.orbit-container .slide-2 .callout,
+    .orbit ul.orbit-container .slide-3 .callout {
+      padding: 1.875rem 0.3125rem; }
+      .orbit ul.orbit-container .slide-1 .callout .header-1,
+      .orbit ul.orbit-container .slide-2 .callout .header-1,
+      .orbit ul.orbit-container .slide-3 .callout .header-1 {
+        font-size: 1.6875rem; }
+      .orbit ul.orbit-container .slide-1 .callout .header-3,
+      .orbit ul.orbit-container .slide-2 .callout .header-3,
+      .orbit ul.orbit-container .slide-3 .callout .header-3 {
+        font-size: 1.125rem; } }
 
 .valign-center {
   transform: translateY(14%);
@@ -9291,12 +9321,25 @@ p {
   -ms-transform: translateY(14%);
   position: relative; }
 
+.slide-2 .valign-center {
+  transform: translateY(12%);
+  -webkit-transform: translateY(12%);
+  -o-transform: translateY(12%);
+  -ms-transform: translateY(12%);
+  position: relative; }
+
 @media screen and (min-width: 40em) {
   .valign-center {
     transform: translateY(23%);
     -webkit-transform: translateY(23%);
     -o-transform: translateY(23%);
-    -ms-transform: translateY(23%); } }
+    -ms-transform: translateY(23%); }
+  .slide-1 .valign-center,
+  .slide-2 .valign-center {
+    transform: translateY(14%);
+    -webkit-transform: translateY(14%);
+    -o-transform: translateY(14%);
+    -ms-transform: translateY(14%); } }
 
 @media screen and (min-width: 64em) {
   .valign-center {
@@ -9563,14 +9606,14 @@ body.is-reveal-open {
       top: 5px;
       transition: all 0.25s ease; }
     .process-tabs .cir-number-list li:hover a, .process-tabs .cir-number-list li:hover:before {
-      color: #bcbcbc;
-      border-color: #bcbcbc; }
+      color: #f7a115;
+      border-color: #f7a115; }
   @media screen and (min-width: 40em) {
     .process-tabs .cir-number-list li a {
       font-size: 1rem; } }
   .process-tabs .cir-number-list li.is-active a, .process-tabs .cir-number-list li.is-active:before {
-    color: #bcbcbc;
-    border-color: #bcbcbc; }
+    color: #f7a115;
+    border-color: #f7a115; }
 
 .process-tabs .tabs-content {
   min-height: 43.75rem; }
@@ -9610,9 +9653,9 @@ body.is-reveal-open {
       padding: 2rem 1rem;
       transition: all 0.25s ease; }
       .process-accord .accordion .accordion-item .accordion-title:hover {
-        color: #9e9e9e; }
+        color: #f7a115; }
         .process-accord .accordion .accordion-item .accordion-title:hover:after {
-          color: #9e9e9e; }
+          color: #f7a115; }
       .process-accord .accordion .accordion-item .accordion-title:after {
         font-family: "qua-icons" !important;
         content: "b";
@@ -9646,7 +9689,7 @@ body.is-reveal-open {
     color: #f7a115;
     padding-bottom: 0.625rem; }
   .process-accord .accordion .is-active > .accordion-title::after {
-    color: #bcbcbc;
+    color: #f7a115;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     margin-top: 3px; }

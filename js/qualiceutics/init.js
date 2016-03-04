@@ -144,7 +144,7 @@
 
       // contact form setup
       // ----------------------------------------
-      var $contactForm = $('#contact');
+      var $contactForm = $('#contact-form');
       $contactForm.on('submit', function (event) {
         event.preventDefault();
         // the actual submission

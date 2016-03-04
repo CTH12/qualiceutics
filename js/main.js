@@ -1,3 +1,9 @@
+/*!
+ * qualiceutics v0.1.0 (http://archercom.com/)
+ * Copyright 2014-2016 Archer Communications [luis rosario //zapo]
+ * Licensed under MIT (https://github.com/archercom/arrowhead/blob/master/LICENSE)
+ */
+
 (function ($, window, document, undefined) {
 
   'use strict';
@@ -144,7 +150,7 @@
 
       // contact form setup
       // ----------------------------------------
-      var $contactForm = $('#contact');
+      var $contactForm = $('#contact-form');
       $contactForm.on('submit', function (event) {
         event.preventDefault();
         // the actual submission
